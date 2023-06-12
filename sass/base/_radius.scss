@@ -1,0 +1,13 @@
+$default_border_radius:.6em;
+
+$br_map:cal_dimension($default_border_radius,10);
+$sous_br_map : (1:"top-left-radius",2:"top-right-radius",3:"bottom-left-radius",4:"bottom-right-radius");
+
+.br{
+    @include adjuster(border-radius,$br_map,false);
+    @include sous_adjuster(border,$br_map,$sous_br_map);
+}
+
+.br-50{
+    border-radius: 50%!important;
+}
