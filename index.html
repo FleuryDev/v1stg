@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     
     <title>Document</title>
 </head>
 <body>
-    <div class="stg-container">
+    <div class="stg-container" id="top">
         <div class="stg-header-container">
             <div class="header-elms fs8">
                 <img src="img/logo.png" alt="" class="logo">
@@ -19,7 +21,7 @@
                     <ul class="">
                         <li><a href="">Développement</a>
                             <ul class="sous-service s1 stg-hover">
-                                <li><a href="">Sites Vitrines</a></li>
+                                <li><a href="">Sites web</a></li>
                                <li><a href=""> Sites E-commerces</a></li>
                                 <li><a href=""> Applications Mobiles</a></li>
                             </ul>
@@ -31,15 +33,8 @@
                         <li><a href="">Référencement</a>
                             <ul class="sous-service s1 stg-hover">
                                <li><a href=""> Référencement SEO</a>
-                                <ul class="sous-service sst txt-nowrap stg-hover">
-                                    <li><a href=""> Moteur de recherche</a></li>
-                                 </ul>
                                 </li>
                                 <li><a href=""> Référencement SEA</a>
-                                    <ul class="sous-service txt-nowrap sst stg-hover">
-                                        <li><a href=""> Réseaux Sociaux</a></li>
-                                        <li><a href=""> Moteur de recherche</a></li>
-                                     </ul>
                                 </li>
                             </ul>
                         </li>
@@ -102,14 +97,14 @@
             </div>
         </div>
 
-        <div class="stg-body">
+        <div  class="stg-body">
             <div class="div-li div-li-2">
-                <div class="carousel-text p-2">
+                <div class="carousel-text p-2 aos-item" data-aos="fade-up" data-aos-duration="1500">
                     <h1>Site web</h1>
                     <div class="txt-50 mt-1 ">
                         Améliorer votre présence en ligne avec un site web ergronomique !
                     </div>
-                   <div class="CONS"> <a href="" class="consult">Consulter &rangle; &rangle;</a></div>
+                   <div class="CONS"> <a href="" class="consult">Consulter <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i></a></div>
                 </div>
                 <div class="carousel-img">
                     <img src="img/IMG-20230607-WA0011.jpg" alt="">
@@ -117,14 +112,18 @@
             </div>
             <hr class="hr">
             <div class="div-li txt-center">
-                <div class="txt-center mx-auto txt-infos-stg txt-32">
+                <div class="txt-center mx-auto txt-infos-stg txt-32 aos-item" data-aos="zoom-out">
                     Pour les entreprises B2B, locales, nouvelles startups, organisations,...
                 </div>
             </div>
             <hr class="hr">
-            <div class="div-li div-li-2 p-2 border-b">
-                <a href="" class=" link-blue-1 txt-32 border-radius bg-blue-secondary btn txt-white mx-auto">Bénéficier de l'audit gratuit</a>
-                <a href="" class="link-blue-2 txt-32 txt-white bg-blue-primary border-radius btn mx-auto">Demander un devis</a>
+            <div class="div-li div-li-2 p-2 border-b ">
+                <div class="mx-auto">
+                    <a href="" class="link-blue-1 txt-32 border-radius  btn  mx-auto btn_blue--secondary">Bénéficier de l'audit gratuit</a>
+                </div>
+                <div class="mx-auto">
+                    <a href="" class="link-blue-2 txt-32  btn_blue--primary border-radius btn mx-auto">Demander un devis</a>
+                </div>
             </div>
             <div id="social-sid" class="socialnav my-auto">
                 <a href="#" id="facbg"><i class="fa-brands fa-facebook-f fa-beat" style="color: aliceblue;"></i> </a>
@@ -132,8 +131,12 @@
                 <a href="#" id="inst"><i class="fa-brands fa-square-instagram fa-beat"></i></a>
                     <a href="#" id="twt"> <i class="fa-brands fa-twitter fa-beat"></i></a>
             </div>
+            <div class="btn-circle-devis">
+                Demander un devis 
+            </div>
+             <!-- <i class="fa-solid fa-arrow-right" style="color: #fafafa;"></i> -->
             <div class="div-li li-w60 m-3 mt-4">
-                <div class="stg-info mt-1 txt-50">
+                <div class="stg-info mt-1 txt-50 aos-item" data-aos="fade-left" data-aos-duration="1000" data-aos-placement="center-center">
                     Avec <span class="h1">Strategy</span><span class=" h1 fine">Fine</span> travaillez avec des experts pour créer de la 
                     valeur et développer votre entreprise. 
                 </div>
@@ -146,7 +149,7 @@
             </div>
             <div class="div-li li-w25 p-2">
                 <div class=" col-sm-5 col-md-3 mx-auto">
-                    <div class="col-sm-10 counter blue-1">
+                    <div class="col-sm-10 counter blue-1 aos-item" data-aos="flip-up" data-aos-placement="top-bottom" data-aos-delay="200">
                         <div class="counter-icon">
                             <i class="fa fa-globe"></i>
                         </div>
@@ -154,7 +157,7 @@
                         <span class="counter-value" _msthash="660920" _msttexthash="23335">1963</span>
                     </div>
                 </div>
-                <div class=" col-sm-5 col-md-3 mx-auto">
+                <div class=" col-sm-5 col-md-3 mx-auto aos-item" data-aos="flip-up" data-aos-placement="top-center" data-aos-delay="300">
                     <div class="counter green">
                         <div class="counter-icon">
                             <i class="fa fa-rocket"></i>
@@ -164,20 +167,20 @@
                     </div>
                 </div>
 
-                <div class=" col-sm-5 col-md-3 mx-auto">
+                <div class=" col-sm-5 col-md-3 mx-auto aos-item" data-aos="flip-up" data-aos-placement="top-bottom" data-aos-delay="400">
                     <div class="col-sm-10 counter blue">
                         <div class="counter-icon">
-                            <i class="fa-solid fa-compass-drafting" style="color: #ffffff;"></i>
+                            <i class="fa fa-solid fa-compass-drafting" style="color: #ffffff;"></i>
                         </div>
                         <h3>Design UI/UX</h3>
                         <span class="counter-value" _msthash="6920" _msttexthash="2335">63</span>
                     </div>
                 </div>
 
-                <div class="col-sm-5 col-md-3 mx-auto">
+                <div class="col-sm-5 col-md-3 mx-auto" data-aos="flip-up" data-aos-placement="top-center" data-aos-delay="500">
                   <div class="counter green-1">
                       <div class="counter-icon">
-                        <i class="fa-solid fa-users" style="color: #ffffff;"></i>
+                        <i class="fa fa-solid fa-users" style="color: #ffffff;"></i>
                           
                       </div>
                       <h3>Stratégie de contenu</h3>
@@ -189,11 +192,11 @@
             </div>
             <hr>
             <div class="div-li mt-4">
-                <div class="txt-50 mx-auto mt-4 fw-2">
+                <div class="txt-50 mx-auto mt-4 fw-2 aos-item" data-aos="fade-right" data-aos-duration="800" data-aos-offset="300">
                     Le processus pour optimiser durablement votre présence en ligne.
                 </div>
             </div>
-            <div class="div-li process-detail mt-4">
+            <div class="div-li process-detail mt-4 aos-item" data-aos="zoom-out" data-aos-duration="1000">
                 <div class="pross1 txt-20 mx-auto"> Recherche &amp; Audit</div>
                 <div class="circle mt-1">
                     <div class="triangle"></div>
@@ -204,9 +207,9 @@
                 </div>
                 
             </div>
-            <div class="div-li div-li-2 fw-4 mt-4 mb-2">
-                <div >
-                    <div class="txt-fs-secondary txt-20 bg-green-primary border-radius btn w-auto">
+            <div  id="transcroller-body" class="aos-all div-li div-li-2 fw-4 mt-4 mb-2" >
+                <div class="aos-item" data-aos="fade-up">
+                    <div  class=" aos-item__inner txt-fs-secondary txt-20 bg-green-primary border-radius btn w-auto">
                         Recherche &amp; Audit
                     </div>
                     <div class="mt-2">
@@ -218,22 +221,22 @@
                     </p>
                 </div>
                 <div>
-                    <img class="w-50 float-right" src="/Strategy-fine/img/IMG-20230607-WA0011.jpg" alt="">
+                    <img class="aos-item w-50 float-right" src="/Strategy-fine/img/IMG-20230607-WA0011.jpg" data-aos="fade-left" alt="">
                 </div>
             </div>
             <div class="div-li div-li-2 fw-4 mt-4 mb-2">
                 <div>
-                    <img class="w-50 " src="/Strategy-fine/img/IMG-20230607-WA0012.jpg" alt="">
+                    <img class="w-50 aos-item " src="/Strategy-fine/img/IMG-20230607-WA0012.jpg" data-aos="fade-left" alt="">
                 </div>
                 <div >
-                    <div class="txt-fs-secondary txt-20 bg-blue-secondary border-radius btn w-auto">
+                    <div class="aos-item txt-fs-secondary txt-20 bg-blue-secondary border-radius btn w-auto" data-aos="fade-right">
                         Mise en oeuvre de la Roadmap
                     </div>
-                    <div class="mt-2">
+                    <div class="mt-2 aos-item" data-aos="fade-up-left">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maxime amet perspiciatis rem neque consectetur quae. 
                         Rerum corrupti repudiandae totam recusandae reprehenderit unde, ea harum qui amet saepe dolorem obcaecati!
                     </div>
-                    <p class="mt-2 bottom-0">
+                    <p class="mt-2 bottom-0 aos-item" data-aos="fade-down-left">
                         Lorem ipsum dolor sit amet, consectetur adipisicing.
                     </p>
                 </div>
@@ -241,19 +244,19 @@
             </div>
             <div class="div-li div-li-2 fw-4 mt-2 mb-2">
                 <div >
-                    <div class="txt-fs-secondary mt-2 txt-20 bg-green-primary border-radius btn w-auto">
+                    <div class="txt-fs-secondary aos-item mt-2 txt-20 bg-green-primary border-radius btn w-auto" data-aos="fade-down">
                         Suivi &amp; Adaptation
                     </div>
-                    <div class="mt-2">
+                    <div class="mt-2 aos-item" data-aos="flip-right">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero maxime amet perspiciatis rem neque consectetur quae. 
                         Rerum corrupti repudiandae totam recusandae reprehenderit unde, ea harum qui amet saepe dolorem obcaecati!
                     </div>
-                    <p class="mt-2 bottom-0">
+                    <p class="mt-2 bottom-0 aos-item" data-aos="fade-left">
                         Lorem ipsum dolor sit amet, consectetur adipisicing.
                     </p>
                 </div>
                 <div>
-                    <img class="w-50 float-right" src="/Strategy-fine/img/IMG-20230607-WA0011.jpg" alt="">
+                    <img class="w-50 float-right aos-item" src="/Strategy-fine/img/IMG-20230607-WA0011.jpg" data-aos="zoom-in-up" alt="">
                 </div>
             </div>
 
@@ -403,11 +406,15 @@
         </div>
         
     </div>
-    <div class="footer div-li">
+    <div class="to-top"><a  href="#top"><i class="fa-solid fa-angle-right fa-rotate-270" style="color: #52565b;"></i></a></div>
+
+    <div class="footer div-li aos-item" data-aos="fade-right" data-aos-duration="1500" data-aos-placement="center-bottom">
         <div class="footer-group div-li">
             <div class="group-1">
-                <div class="txt-center">ASSOCIATION DES STRAT&Eacute;GIES NOUVELLES ET FINES</div>
-                <div class="icons">
+                <img src="img/logo-alt.png" class="mx-auto" style="width: 70%;" alt="">
+                <img src="img/logo-txt.png" class="mx-auto" style="width: 80%;" alt="">
+                <div class="txt-center mb-01">ASSOCIATION DES STRAT&Eacute;GIES NOUVELLES ET FINES</div>
+                <div class="icons ">
                     <a href="#" ><i class="fa-brands fa-facebook-f" style="color: aliceblue;"></i> </a>
                     <a href="#" ><i class="fa-brands fa-square-instagram"></i></a>
                      <a href="#" > <i class="fa-brands fa-linkedin-in"></i></a>
@@ -415,61 +422,61 @@
                 </div>
             </div>
             <div class="group-2">
-                <div class="txt-center txt-fs-secondary txt6">
+                <div class="txt-center txt-fs-secondary txt6 mb-01">
                     Nos Services
                 </div>
                 <div>
                     <ul>
-                        <li><a href="">Sites vitrines</a></li>
-                        <li><a href="">Sites E-commerce</a></li>
-                        <li><a href="">Applications mobile</a></li>
-                        <li><a href="">SEO</a></li>
-                        <li><a href="">SEA</a></li>
-                        <li><a href="">Maquette de site</a></li>
-                        <li><a href="">Refonte de site</a></li>
-                        <li><a href="">Designe graphique</a></li>
-                        <li><a href="">Landing page</a></li>
-                        <li><a href="">Rédaction web</a></li>
-                        <li><a href="">Gestion des réseaux sociaux</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #c5c4c4;"></i> <a href="">Sites vitrines</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Sites E-commerce</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Applications mobile</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">SEO</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">SEA</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Maquette de site</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Refonte de site</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Designe graphique</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Landing page</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Rédaction web</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Gestion des réseaux sociaux</a></li>
                     </ul>
                 </div>
             </div>
             <div class="group-3">
-                <div class="txt-center txt-fs-secondary txt6">
-                    Liens importants
+                <div class="txt-center txt-fs-secondary txt6 mb-01">
+                    <span class="fa-solid fa-link"></span> Liens importants 
                 </div>
                 <div>
                     <ul>
-                        <li><a href="">Sites vitrines</a></li>
-                        <li><a href="">Sites E-commerce</a></li>
-                        <li><a href="">Applications mobile</a></li>
-                        <li><a href="">SEO</a></li>
-                        <li><a href="">SEA</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Qui sommme-nous ?</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">FAQs</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Nous recrutons</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Help &amp; Support</a></li>
+                        <!-- <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">SEA</a></li> -->
                        
                     </ul>
                 </div>
                 <div>
-                    <div class="txt-center txt-fs-secondary txt6">
+                    <div class="txt-center txt-fs-secondary txt6 mt-4">
                         Contacts
                     </div>
-                    <div class="div-contact div-li-2">
+                    <div class="div-contact div-li-2 ">
                         
-                            <div class="txt-center txt-fs-secondary txt6">
-                                Phone : <br>
-                                <div class="txt-20">
+                            <div class="txt-center txt-fs-secondary txt6 mt-05">
+                                <i class="fa-solid fa-phone mb-02" style="color: #d6d6d6;"></i> Phone : <br>
+                                <div class="txt7">
                                     +229 229 229 00    
                                 </div>
-                                <div class="txt-20"> +229 300 300 00</div>
+                                <div class="txt7 mt-05"> +229 300 300 00</div>
                             </div>
                        
                        
-                            <div class="txt-center txt-fs-secondary txt6">
-                                Email: <br>
-                                <div class="txt-20">
+                            <div class="txt-center txt-fs-secondary txt6 mt-05">
+                                <i class="fa-solid fa-envelope mb-02" style="color: #dbdbdb;"></i> Email: <br>
+                                <div class="txt7">
                                     support@email.com 
                                     
                                 </div>
-                                <div class="txt-20">
+                                <div class="txt7 mt-05">
                                     company@emai.org
                                 </div>
                             </div>
@@ -479,8 +486,8 @@
             </div>
             
         </div>
-        <div class="div-li footer-group politiques">
-            <div class=" mx-auto">
+        <div class="div-li footer-group politiques fs8">
+            <div class=" mx-auto ">
                 <a href="">Mentions légales</a>
             </div>
             <div class="mx-auto">
@@ -492,10 +499,15 @@
             
         </div>
     </div>
-
-    <div class="div-li mx-auto txt-center ccopy">&copy; StrategyFine 2023 All right reserved</div>
+    <div class="div-li mx-auto txt-center ccopy " >&copy; StrategyFine 2023 All right reserved</div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+          });
+    </script>
     <script>
         $(document).ready(function(){
           $('.counter-value').each(function(){
@@ -508,8 +520,17 @@
                       $(this).text(Math.ceil(now));
                   }
               });
-          });
+          })
       });
       </script>
+
+      <script>
+        const xtext = document.querySelector('.btn-circle-devis');
+        xtext.innerHTML = xtext.innerText.split("").map((char,i) =>{
+            return '<span style="transform : translateY(-50%) rotate('+(i+1)*(360/17)+'deg;" data="'+i+'">'+char+'</span>';
+        }).join("");
+    </script>
 </body>
 </html>
+
+<!-- FLEURY DEV ON JUIN, 12 2023 AT 11:14 PM  -->
