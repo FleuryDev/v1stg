@@ -1,0 +1,101 @@
+
+:root{
+    /* COLOR */
+    --blue-primary:#0000ff;
+    --blue-secondary : #0097ff;
+    --green-primary: #00b200;
+    --green-secondary:#00ff00;
+    --white:#ffffff;
+    --black:#000000;
+    --danger:rgb(252, 23, 23);
+    --warning:rgb(255, 153, 0);
+    --sucsess:rgb(73, 165, 73);
+    --default:grey;
+
+    /* DEFAULT WHIGHT AND HEIGHT */
+    --default-size: 1rem;
+    --font-size-primary:
+
+}
+
+.btn{
+    display: inline-block;
+    white-space: nowrap;
+    user-select: none;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+.btn_blue--secondary{
+    background-color:var(--blue-secondary);
+    color: var(--black);
+}
+
+.btn_blue--secondary:hover{
+    background-color: var(--green-secondary);
+    color: var(--black);
+}
+
+.btn_blue--primary{
+    background-color:var(--blue-primary);
+    color: var(--white);
+}
+
+.btn_blue--primary:hover{
+    background-color: var(--green-primary);
+    color: var(--white);
+}
+
+.btn-danger{
+    background-color: var(--danger);
+    color: var(--white);
+}
+.btn-danger:hover{
+    color:var(--danger);
+    background-color: var(--white);
+}
+.btn-success{
+    background-color: var(--sucsess);
+    color: var(--white);
+}
+.btn-warning{
+    background-color: var(--warning);
+    color: var(--white);
+}
+.btn-warning:hover{
+    background-color: var(--white);
+    color: var(--warning);
+}
+
+.btn-default{
+    background-color: var(--default);
+    color: var(--black);
+}
+
+.txt-fs_1{
+    font-size: calc(var(--default-size)/0.25);
+}
+.txt-fs_2{
+    font-size: calc(var(--default-size)/0.5);
+}
+.txt-fs_3{
+    font-size: calc(var(--default-size)/0.75);
+}
+.txt-fs_default{
+    font-size: calc(var(--default-size)/1);
+}
+.txt-fs_4{
+    font-size: calc(var(--default-size)/1.25);
+}
+.txt-fs_5{
+    font-size: calc(var(--default-size)/1.5);
+}
+.txt-fs_6{
+    font-size: calc(var(--default-size)/1.75);
+}
+.txt-fs_8{
+    font-size: calc(var(--default-size)/2);
+}
+
+
