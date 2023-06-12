@@ -1,0 +1,125 @@
+
+
+$bprimary : #0000ff !default;
+$bsecondary:  #0097ff !default;
+$gprimary:  #00b200 !default;
+$gsecondary:  #00ff00 !default;
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+   "bprimary" : $bprimary,
+   "bsecondary": $bsecondary,
+   "gprimary": $gprimary,
+   "gsecondary":$gsecondary,
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+
+
+$blue-primary:       $bprimary !default;
+$blue-secondary:       $bsecondary !default;
+$green-primary:       $gprimary !default;
+$green-secondary:       $gsecondary !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "blue-primary":  $blue-primary,
+    "blue-secondary": $blue-secondary,
+    "green-primary": $green-primary,
+    "green-secondary": $green-secondary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval:      8% !default;
+
+
+
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .33),
+    3: ($spacer * .5),
+    4: ($spacer * .66),
+    5: ($spacer * .75),
+    6: $spacer,
+    7: ($spacer * 1.5),
+    8: ($spacer * 2),
+    9: ($spacer * 2.5),
+    10: ($spacer * 3)
+  ),
+  $spacers
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    10 : 10%,
+    25: 25%,
+    30 : 30%,
+    33 : 33%,
+    40 : 40%,
+    50: 50%,
+    60 : 60%,
+    66 : 66%
+    70 : 70%,
+    75: 75%,
+    90 : 90%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+

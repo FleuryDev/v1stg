@@ -1,0 +1,16 @@
+$padding_default : .6rem;
+
+$pad_map : cal_dimension($padding_default,10 );
+// $pad_map :(0:.6rem , 1:.6rem, 2:1.2rem);
+  
+$sous_padd : (1:'top', 2:'left',3:'right',4:'bottom');
+
+.p{
+    @include adjuster(padding,$pad_map,false) ;
+    @include sous_adjuster(padding,$pad_map,$sous_padd);
+}
+
+.m{
+    @include adjuster(margin,$pad_map,false);
+    @include sous_adjuster(margin,$pad_map,$sous_padd);
+}

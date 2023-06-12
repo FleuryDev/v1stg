@@ -1,0 +1,7 @@
+$default_z_index : 1;
+
+$map_index :cal_dimension($default_z_index,10);
+
+.zi{
+    @include adjuster(z-index,$map_index,false);
+}
