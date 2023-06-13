@@ -271,7 +271,7 @@ opacity: 1;
   margin-left: auto!important;
   margin-right: auto!important;
   position: relative;
-  margin-top:5rem;
+  margin-top:4rem;
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -296,7 +296,7 @@ opacity: 1;
 
 }
 h1,.h1{
-  font-size: var(--fs-5);
+  font-size:calc(var(--fs-6)) ;
 }
 .carousel-text{
   width: 100%;
@@ -351,7 +351,7 @@ img{
 .mt-4{margin-top: 4rem;}
 .bottom-0{bottom: 0!important;}
 .border-b{  border-bottom: 1px solid gray;}
-.txt-50{font-size: var(--fs-7)!important;}
+.txt-50{font-size: var(--fs-8)!important;}
 .txt-32{font-size: var(--fs-8);
 
 }
