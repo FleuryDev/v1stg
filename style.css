@@ -141,7 +141,7 @@ box-shadow: .2rem .9rem 1rem #cdf7cd;
   display: grid;
   grid-template-columns: auto;
   width: 100%;
-  padding: 1.3rem 3rem 1.3rem 3rem;
+  padding: .7rem 3rem .7rem 3rem;
   backdrop-filter: blur(10px);
   background-color: rgba(255,255,255,.4);
   box-shadow:.2rem .2rem .9rem rgb(213, 213, 213);
@@ -156,7 +156,7 @@ box-shadow: .2rem .9rem 1rem #cdf7cd;
   display:grid;
   grid-template-columns: 20fr 15fr 15fr 15fr 15fr 10fr 25fr;
   width:auto;
-  padding:.2rem;
+  padding:.1rem .7rem  .1rem .7rem;
   background-color:#e5e5ff;
   border: 1px solid transparent;
   border-radius: .6rem;
@@ -190,7 +190,7 @@ box-shadow: .2rem .9rem 1rem #cdf7cd;
   display: flex;
 }
 .search-bar input{
-  padding: .6rem;
+  padding: .4rem;
   margin-right: 0!important;
   outline-color: #cbcbcb;
   border: 1px solid transparent;
@@ -198,7 +198,7 @@ box-shadow: .2rem .9rem 1rem #cdf7cd;
   border-bottom-left-radius: 0.4em;
 }
 .search-bar button{
-  padding: .6rem;
+  padding: .4rem;
   margin-left: 0!important;
   outline-color: #cbcbcb;
   border: 1px solid transparent;
@@ -271,7 +271,7 @@ opacity: 1;
   margin-left: auto!important;
   margin-right: auto!important;
   position: relative;
-  margin-top:8rem;
+  margin-top:5rem;
   padding-left: 3rem;
   padding-right: 3rem;
 }
