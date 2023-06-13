@@ -285,6 +285,10 @@ opacity: 1;
 .div-li-2{
   grid-template-columns: 50fr 50fr;
 }
+.stg-info{width: 65%;}
+.div-li-46{
+  grid-template-columns: 40fr 60fr;
+}
 .li-w60{
   grid-template-columns: 85fr 15fr;
 
@@ -355,9 +359,9 @@ img{
 .float-right{float: right;}
 .mt-4{margin-top: 4rem;}
 .bottom-0{bottom: 0!important;}
-.border-b{  border-bottom: 1px solid gray;}
+/* .border-b{  border-bottom: 1px solid gray;} */
 .txt-50{font-size: var(--fs-8)!important;}
-.txt-32{font-size: var(--fs-8);
+.txt-32{font-size: calc(var(--fs-8)/1.43);
 
 }
 .fw-2{
@@ -375,17 +379,25 @@ font-size: var(--fs-8)!important;
 
 /*********COUNTER STYLES*********************/
 
+/* .projects{
+ display: grid;
+ grid-template-columns: 20fr 20fr 20fr 20fr 20fr ;
+
+} */
 .counter{
   color: #eb3b5a;
-  font-family: 'Muli', sans-serif;
-  width: 200px;
-  height: 200px;
+  width: 12rem;
+  height: 12rem;
   text-align: center;
   border-radius: 100%;
   padding: 77px 32px 40px;
-  margin: 0 auto;
+  margin-left: 0rem!important;
+  margin-right: 2rem!important;
   position: relative;
   z-index: 1;
+}
+.counter-x{
+  transform: translateX(-2rem);
 }
 .counter:before,
 .counter:after{
@@ -415,7 +427,7 @@ font-size: var(--fs-8)!important;
 .counter .counter-icon{
   color: #fff;
   background: linear-gradient(45deg,#B81242 49%, #D74A75 50%);
-  font-size: 33px;
+  font-size: 25px!important;
   line-height: 70px;
   width: 70px;
   height: 70px;
@@ -432,13 +444,13 @@ font-size: var(--fs-8)!important;
 }
 .counter:hover .counter-icon i.fa{ transform: rotateX(360deg); }
 .counter h3{
-  font-size: var(--fs-9);
+  font-size: .8rem!important;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 0 3px;
+  margin: 0 0 2px;
 }
 .counter .counter-value{
-  font-size: var(--fs-8);
+  font-size: var(--fs-9);
   font-weight: 700;
 }
 .counter.orange{ color: #F38631; }
