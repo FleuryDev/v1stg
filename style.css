@@ -130,7 +130,7 @@ box-shadow: .2rem .9rem 1rem #cdf7cd;
 .txt-blue-primary{color:var(--blue-primary)!important;}
 .txt-blue-secondary{color: var(--blue-secondary)!important;}
 
-.fs8{font-size: calc(var(--fs-7)/1.8) ;}
+.fs8{font-size: calc(var(--fs-9)/1.04) ;}
 .stg-container{
   display: flex;
   width: 100%;
