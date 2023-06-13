@@ -105,9 +105,11 @@ color: var(--black);
 .txt-fs-primary{font-size: var(--fs-PRIMARY);}
 .txt-fs-secondary{font-size: var(--fs-SECONDARY);}
 .border-radius{border-radius: .6rem;}
-.btn{padding: .6rem;}
+.btn{padding: .6rem;
+  font-size: calc(var(--fs-8)/1.43)!important;
+}
 .w-auto{max-width: max-content!important;}
-.CONS{margin-top: 2rem;}
+.CONS{margin-top: 2.5rem;}
 .consult{
 position: relative;
 margin-top: 3rem;
@@ -116,7 +118,7 @@ padding: .9rem;
 text-decoration: none;
 color: white;
 text-align: center;
-font-size: var(--fs-8);
+font-size: calc(var(--fs-8)/1.43);
 background:linear-gradient(45deg, var(--blue-secondary), var(--blue-primary));
 }
 .consult:hover{
@@ -268,10 +270,10 @@ opacity: 1;
   display: block;
   width: 90%;
   padding: .6rem;
-  margin-left: auto!important;
-  margin-right: auto!important;
+  margin-left:5rem!important;
+  margin-right: 5rem!important;
   position: relative;
-  margin-top:4rem;
+  margin-top:5rem;
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -319,7 +321,7 @@ img{
 
   text-decoration: none;
   border: 1px solid transparent;
-  font-size: 32px;
+  
 }
 
 .mx-auto{
@@ -332,6 +334,9 @@ img{
 }
 .p-2{
   padding: 2rem;
+}
+.pt-1{
+  padding: 1rem;
 }
 .w-50{width: 50%;}
 .mt-05{margin-top: .5rem;}
