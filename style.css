@@ -45,7 +45,7 @@
   height: 292px;
 } */
 
-#stage img {
+/* #stage img {
   position: inherit;
 }
 
@@ -55,7 +55,7 @@
   border: 1px solid #ccc;
   background: #fff;
 } */
-
+/* 
 #stage img:nth-of-type(1) {
   animation: fader 5s 1s infinite;
 
@@ -73,8 +73,8 @@
 #stag img {
   background-image: url('img/IMG-20230607-WA0011.jpg') !important;
   background: url('img/IMG-20230607-WA0011.jpg');
-}
-
+} */
+/* 
 @keyframes fader {
   from {
     opacity: 1.0;
@@ -83,7 +83,7 @@
   to {
     opacity: 0.0;
   }
-}
+} */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -257,7 +257,7 @@
 
 .logo {
   background-image: #ffff !important;
-  width: 60%;
+  width: 90%;
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -367,6 +367,59 @@
   display: block;
   transition: all 1s;
 
+}
+
+/* CAROUSEL PERSOL */
+.container {
+  width: 100%;
+  height: 20rem;
+
+}
+
+.container .carousel {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #ccc; */
+  position: relative;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+}
+
+.slider section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  opacity: 0;
+  z-index: 0;
+  transition: all 5s
+}
+
+.slider section:nth-child(1) {
+  opacity: 1;
+}
+
+.next,
+.prev {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
 }
 
 
