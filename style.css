@@ -830,14 +830,10 @@ img {
 
 
 .projects-container {
-  width: 100%;
+  overflow: hidden;
+
   padding: 1rem;
-  display: grid;
-  grid-template-columns: 24fr 24fr 24fr 24fr;
-  gap: 2rem;
-  align-content: stretch;
-  justify-content: space-around;
-  border-color: #0097ff;
+
 }
 
 .projects-container .project-x {
@@ -1156,8 +1152,7 @@ hr {
 
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiper-button-next .swiper-button-prev {
   position: absolute !important;
   color: gainsboro !important;
   font-size: small !important;
@@ -1169,6 +1164,18 @@ hr {
   height: 20rem;
   display: flex;
 }
+
+.swiper2 {
+  width: 26rem;
+  height: 20rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+
+}
+
+.swiper2 .swiper-slide {}
 
 
 .avis-card .user-infos::after {
@@ -1471,7 +1478,7 @@ textarea:focus~span {
 
 textarea {
   width: 100%;
-  min-height: 6rem;
+  min-height: 12rem;
 }
 
 .input-container {
