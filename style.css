@@ -362,39 +362,33 @@
   justify-content: center;
   align-content: center;
   right: 3rem;
-  font-size: var(--fs-9);
+  font-size: calc(var(--fs-9)*0.8);
   font-weight: 500;
   background: #0000ff;
   border-radius: 50%;
   border: 1px solid transparent;
-  height: 6rem;
-  width: 6rem;
+  height: 4.5rem;
+  width: 4.5rem;
   z-index: 12;
   color: white;
+  display: none;
 
-  display: flex;
 }
 
 .btn-circle-devis span {
   position: absolute;
   left: 50%;
-  transform-origin: 0 3rem;
-  transform: rotateZ(calc(var(--i)*17deg));
+  transform-origin: 0 2.25rem;
+  transform: rotateZ(calc(var(--i)*19deg));
 
 }
 
-.btn-circle-devis span:first-of-type {
-  transform: rotateZ((360/17)deg);
+.btn-circle-devis:hover {
+  transition: all 300ms ease-in-out;
+  background-color: #00ff00;
+  color: #000;
+  transform: scale(1.1);
 }
-
-.btn-circle-devis span:nth-of-type(2) {
-  transform: rotateZ(2*(360/17)deg);
-}
-
-.btn-circle-devis span:nth-of-type(3) {
-  transform: rotateZ(15*(360/17)deg);
-}
-
 
 .btn-circle-devis i {
   font-size: var(--fs-8);
@@ -1372,6 +1366,7 @@ hr {
   margin-left: 7.7rem;
 }
 
+
 .xx {
 
   position: relative;
@@ -1591,20 +1586,20 @@ textarea {
 
 .to-top {
   margin: 0 !important;
-  display: flex;
-  position: static;
-  width: 5rem;
-  height: 5rem;
+  display: none;
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
   font-size: var(--fs-6);
   padding: .5rem;
   text-align: center;
   border: 1px solid transparent;
   border-radius: 50%;
   box-shadow: .1rem .5rem .4rem #b1b1b0;
-  /* right: 4rem;
-  top: -6rem; */
+  right: 6rem;
+  top: 70%;
 
-  transform: translate(90vw, -30vh);
+  transform: translate(50%, 0%);
   background-color: #ececec;
   z-index: 157878977 !important;
 
@@ -1654,5 +1649,13 @@ textarea {
   color: var(--white) !important;
 }
 
+
+.elm-visible {
+  display: block !important;
+}
+
+.elm-invisible {
+  display: none !important;
+}
 
 /* BY FLEURY DEV ON JUIN, 12 2023 AT 11:17 PM  */

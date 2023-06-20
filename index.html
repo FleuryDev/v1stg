@@ -20,8 +20,8 @@
 </head>
 
 <body>
-    <div class="stg-container" id="top">
-        <div class="stg-header-container">
+    <main class="stg-container" id="top">
+        <header class="stg-header-container">
             <div class="header-elms fs8">
                 <img src="img/Stratégy-FineACCl_-_copie_1-removebg-preview.png" alt="" class="logo">
                 <div class="stg-service">
@@ -106,7 +106,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </header>
 
         <div class="stg-body">
 
@@ -245,7 +245,7 @@
                 <a href="#" id="twt"> <i class="fa-brands fa-twitter fa-beat"></i></a>
             </div>
             <a href="">
-                <div class="btn-circle-devis ">
+                <div id="a-btn" class="btn-circle-devis  ">
 
                     <span style="--i:1">D</span>
                     <span style="--i:2">e</span>
@@ -603,57 +603,6 @@
                 <div class="swiper-scrollbar"></div>
             </div>
 
-            <!-- <div class="div-li mt-2">
-                <div class="avis w-60 mx-auto p-2">
-                    <div class="avis-x">
-                        <div class="info-li"><img src="img/img-04.jpg" alt="" class="img-user" />
-                            <div class="userName txt-32 my-auto">Lili bolte</div>
-                            <div class="date my-auto">oct, 10 2022</div>
-                        </div>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum
-                            praesentium ad
-                            molestias quas molestiae, quaerat beatae, saepe libero suscipit est blanditiis maiores
-                            quibusdam tempore omnis reiciendis, vero dolor enim.</p>
-                    </div>
-
-                    <div class="avis-x">
-                        <div class="info-li"><img src="img/img-04.jpg" alt="" class="img-user" />
-                            <div class="userName txt-32 my-auto">Lili bolte</div>
-                            <div class="date my-auto">oct, 10 2022</div>
-                        </div>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum
-                            praesentium ad
-                            molestias quas molestiae, quaerat beatae, saepe libero suscipit est blanditiis maiores
-                            quibusdam tempore omnis reiciendis, vero dolor enim.</p>
-                    </div>
-
-                    <div class="avis-x">
-                        <div class="info-li"><img src="img/img-04.jpg" alt="" class="img-user" />
-                            <div class="userName txt-32 my-auto">Lili bolte</div>
-                            <div class="date my-auto">oct, 10 2022</div>
-                        </div>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laborum
-                            praesentium ad
-                            molestias quas molestiae, quaerat beatae, saepe libero suscipit est blanditiis maiores
-                            quibusdam tempore omnis reiciendis, vero dolor enim.</p>
-                    </div>
-
-                </div>
-                <div class="div-li mt-2 mb-2">
-                    <div class="div-li div-li-2 txt-32">
-                        <div class="more-comments mx-auto bg-blue-primary btn border-radius"><a href="">Afficher
-                                plus
-                                d'avis</a></div>
-                        <div class="more-comments mx-auto bg-green-secondary btn border-radius"><a href="">Donnez
-                                votre
-                                d'avis</a></div>
-                    </div>
-                </div>
-
-            </div> -->
             <hr>
             <div class="div-li mt-4">
                 <div class="txt-50 fw-2 mt-2">
@@ -769,11 +718,12 @@
 
         </div>
 
-    </div>
-    <div class="to-top"><a href="#top"><i class="fa-solid fa-angle-right fa-rotate-270" style="color: #52565b;"></i></a>
+    </main>
+    <div id="lkTop" class="to-top"><a href="#top"><i class="fa-solid fa-angle-right fa-rotate-270"
+                style="color: #52565b;"></i></a>
     </div>
 
-    <div class="footer div-li aos-item" data-aos="fade-right" data-aos-duration="1500"
+    <footer class="footer div-li aos-item" data-aos="fade-right" data-aos-duration="1500"
         data-aos-placement="center-bottom">
         <div class="footer-group div-li">
             <div class="group-1">
@@ -879,7 +829,7 @@
             </div>
 
         </div>
-    </div>
+    </footer>
     <div class="div-li mx-auto txt-center ccopy ">&copy; StrategyFine 2023 All right reserved</div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
@@ -934,7 +884,70 @@
         setInterval(changeImg, 6000);
     </script>
  -->
+
     <script>
+        $(window).scroll(function () {
+            var window_height, scroll_top;
+            window_height = $(window).height();
+            scroll_top = $(window).scrollTop();
+            hdh = $(document).height();
+
+
+            var $nav_bar = $('#a-btn');
+            var $topelm = $('#lkTop');
+            //(window_height - $nav_bar.height()) <= scroll_top
+            if (scroll_top > hdh * 0.6) {
+                if (!$topelm.hasClass('elm-visible')) {
+                    $topelm.removeClass('elm-invisible')
+
+                    $topelm.addClass('elm-visible');
+                }
+            } else {
+                if ($topelm.hasClass('elm-invisible')) {
+                    $topelm.removeClass('elm-visible')
+
+                    $topelm.addClass('elm-invisible');
+
+                }
+                $topelm.removeClass('elm-visible')
+                $topelm.addClass('elm-invisible');
+
+            };
+
+
+
+
+            if (scroll_top > window_height && scroll_top < hdh * 0.6) {
+                if (!$nav_bar.hasClass('elm-visible')) {
+                    $nav_bar.removeClass('elm-invisible')
+
+                    $nav_bar.addClass('elm-visible');
+                }
+            } else {
+                if ($nav_bar.hasClass('elm-invisible')) {
+                    $nav_bar.removeClass('elm-visible')
+
+                    $nav_bar.addClass('elm-invisible');
+
+                }
+                $nav_bar.removeClass('elm-visible')
+                $nav_bar.addClass('elm-invisible');
+
+            };
+
+        });
+
+        /* window.onscroll = function () { xxx() };
+         function xxx() {
+             if (document.body.scrollTop < 900) {
+                 $('a-btn').className += 'elm-visible';
+                 // document.getElementsByClassName('btn-circle-devis').style.display = 'block';
+                 // alert('ok')
+             } else {
+                 $('a-btn').className += 'elm-invisible';
+ 
+             }
+         }*/
         const next = document.querySelector('.next');
         const prev = document.querySelector('.prev');
         const slider = document.querySelector('.slider');
