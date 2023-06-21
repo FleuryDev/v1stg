@@ -1569,7 +1569,8 @@ textarea {
 .footer ul li a {
   color: white;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-size: calc(var(--fs-10)/0.65) !important;
+  ;
 }
 
 .div-contact {
@@ -1630,11 +1631,11 @@ textarea {
 
 .btn_blue--secondary:hover,
 .btn_blue--primary:hover {
-  padding: 1rem;
+
   box-shadow: .2rem .9rem 1rem #cdf7cd;
   border-color: transparent;
   transition: all .3s linear;
-  padding: .8rem;
+  transform: scale(1.2);
 }
 
 .btn_blue--secondary {
