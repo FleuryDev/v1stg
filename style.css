@@ -1544,18 +1544,26 @@ textarea {
 }
 
 .footer-group .icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
+  justify-content: space-between;
   color: wheat;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.top-M1 {
+  top: -5rem !important;
 }
 
 .icons a i {
   border: 1px solid #ffffff;
-  font-size: var(--fs-8);
+  font-size: var(--fs-9);
   border-radius: var(--border-radius);
   padding: .6rem;
   color: white;
+  margin-left: .5rem;
 }
 
 /* .footer ul li::before{content: '> ';} */
@@ -1587,10 +1595,10 @@ textarea {
 }
 
 .politiques a {
-  color: black;
+  color: rgb(122, 122, 122);
   font-weight: 800;
   text-decoration: none;
-  font-size: var(--fs-9) !important;
+  font-size: 13px !important;
 }
 
 .to-top {
