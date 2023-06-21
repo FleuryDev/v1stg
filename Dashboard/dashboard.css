@@ -1,0 +1,238 @@
+*,
+::after,
+::before,
+main,
+body,
+header {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 5vw 95vw;
+    width: 100vw;
+    overflow-x: hidden;
+    background: #e6e6e6;
+}
+
+nav {
+    background: #05060f;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: .5rem .8rem 1rem #c7c7df;
+}
+
+nav button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: grey;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+
+nav button:active {
+    background-color: rgba(31, 24, 73, 0.3);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    justify-content: stretch;
+    align-items: center;
+    box-shadow: .5rem .6rem .8rem #dfdfdf00;
+    height: auto;
+    width: 100%;
+    background-color: #c7c7df;
+}
+
+header .principal {
+    padding-left: 1rem;
+    display: flex;
+    height: 8vh;
+}
+
+header .navigation {
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    align-items: center;
+    justify-content: stretch;
+}
+
+header .navigation .search-container {
+    display: flex;
+    width: 100%;
+}
+
+header .navigation .search-container input {
+
+    padding: .4rem 0 .4rem 0.4rem;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    width: 90%;
+}
+
+header .navigation .search-container input,
+header .navigation .search-container button {
+    border: 1px solid transparent;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    font-size: medium;
+    position: relative;
+}
+
+header .navigation .search-container button {
+    width: 10%;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    padding: .4rem;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+
+}
+
+header .navigation .section-nav {
+    display: grid;
+    grid-template-columns: 20fr 20fr 20fr 20fr;
+    gap: 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navigation .section-nav button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(95, 95, 95);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+main section {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.row-30 {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.row-60 {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: space-around;
+
+}
+
+main section .card {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: .6rem;
+    background-color: #ffffff;
+    box-shadow: .4rem .7rem 1rem #b3b2b2;
+    object-fit: cover;
+}
+
+main section .card .card-head {
+    top: 0;
+    border-radius: .6rem .6rem 0 0;
+    padding: 1rem;
+    height: 33%;
+    width: 100%;
+    background: linear-gradient(65deg, #00b200 1%, #00ff00);
+    display: flex;
+    font-size: large;
+    justify-content: space-between;
+}
+
+main section .card .card-content,
+.chart-content,
+.chart-content2 {
+    padding: 1rem;
+    width: 100%;
+    height: 66%;
+    background-color: #ffffff;
+    border-radius: 0 0 .6rem .6rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart-card {
+    height: 55vh !important;
+}
+
+.chart-card .card-head {
+    height: 20% !important;
+}
+
+.chart-content {
+    border-radius: 0 0 .6rem .6rem;
+    display: block !important;
+    width: 100%;
+    display: grid !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    height: 80%;
+    gap: .1rem;
+    padding: .5rem;
+}
+
+.chart-content2 {
+    border-radius: 0 0 .6rem .6rem;
+    width: 100%;
+    padding: .5rem;
+    flex-direction: column;
+}
+
+
+.cels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chart-content canvas {
+    position: relative;
+}
+
+.card-content a {
+    font-size: xx-large;
+    font-weight: 900;
+    width: 100% !important;
+    color: #07081b;
+    text-decoration: none;
+}
+
+.subtitle {
+    font-style: italic;
+    color: gray;
+}
