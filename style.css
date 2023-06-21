@@ -1511,7 +1511,7 @@ textarea {
 }
 
 .footer {
-  padding: 1.5rem 1rem 1.5rem 1rem;
+  padding: .8rem 1rem 1rem .8rem;
   background: linear-gradient(45deg, #0f0e0e, #3a3a38, #242323);
   width: 85vw;
   position: relative;
@@ -1527,7 +1527,7 @@ textarea {
 .footer-group>div {
   display: flex;
   flex-direction: column;
-  padding: .6rem;
+  padding: .3rem;
   font-size: var(--fs-9);
   color: white;
   margin-top: auto;
