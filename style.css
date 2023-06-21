@@ -356,6 +356,16 @@
   color: black;
 }
 
+@keyframes ROTATE {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
 .btn-circle-devis {
   position: fixed;
   top: 40%;
@@ -372,6 +382,7 @@
   z-index: 12;
   color: white;
   display: none;
+  animation: ROTATE 20s linear infinite;
 
 }
 
