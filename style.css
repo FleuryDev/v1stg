@@ -23,6 +23,10 @@
   border-radius: var(--scroll-track-radius, var(--scroll-radius));
 }
 
+.md-btn-nav {
+  display: none;
+}
+
 *::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb-color, grey);
   background-image: var(--scroll-thumb, none);
@@ -260,6 +264,9 @@
   width: 90%;
   margin-left: auto !important;
   margin-right: auto !important;
+  position: relative;
+  justify-self: center;
+  align-self: center;
 }
 
 .stg-service {
@@ -915,8 +922,8 @@ img {
 }
 
 .pl-2 {
-  padding-left: 4rem !important;
-  padding-right: 5rem !important;
+  padding-left: 4rem;
+  padding-right: 5rem;
   align-items: center;
   justify-content: center;
 }
@@ -1058,7 +1065,7 @@ hr {
 .snip1445 figcaption:before,
 .snip1445 figcaption:after {
   height: 2px;
-  width: 300px;
+  width: 500px;
   position: absolute;
   content: '';
   background-color: #ffffff;
@@ -1687,3 +1694,215 @@ textarea {
 }
 
 /* BY FLEURY DEV ON JUIN, 12 2023 AT 11:17 PM  */
+
+
+/* X-Small devices (portrait phones, less than 576px
+ No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (max-width: 867px) {
+  body {
+    display: none;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 868px) and (max-width: 992px) {
+  body {
+    display: block;
+  }
+
+  .stg-body {
+    display: block;
+    width: 100%;
+    padding: .6rem;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    position: relative;
+    margin-top: 4rem;
+    padding-left: 3rem;
+    padding-right: 5rem;
+  }
+
+
+  .stg-service,
+  .search-bar {
+    display: none;
+  }
+
+  .header-elms {
+    justify-content: space-between;
+    justify-items: left;
+    display: flex;
+    width: 95%;
+  }
+
+  .logo {
+    width: 9rem;
+    position: relative;
+    left: 0 !important;
+    margin: 0 !important;
+    justify-self: left;
+  }
+
+  .md-btn-nav {
+    display: block;
+    position: relative;
+    color: #353434;
+    background-color: transparent;
+    outline: none;
+    border-radius: .2rem;
+    padding: 1px;
+    font-size: var(--fs-8);
+    float: right;
+    right: 0;
+    border: 1px solid transparent;
+  }
+
+  .pl-2 {
+    padding-left: 0 !important;
+    padding: 0;
+  }
+
+  .ml-2 {
+    margin-left: 1rem !important;
+  }
+
+  .snip1445 {
+    width: auto;
+    height: auto;
+  }
+
+
+  .snip1445 figcaption {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: .6rem;
+  }
+
+  .snip1445 h2,
+  .snip1445 h4 {
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .team-container {
+    grid-template-columns: 45fr 45fr;
+    gap: 2rem;
+  }
+
+  .btn-circle-devis {
+
+    top: 40%;
+    justify-content: center;
+    align-content: center;
+    right: .5rem;
+    font-size: calc(var(--fs-9)*0.6);
+    font-weight: 600;
+    background: #0000ff;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    height: 3.5rem;
+    width: 3.5rem;
+    color: white;
+  }
+
+  .btn-circle-devis span {
+
+    transform-origin: 0 1.75rem;
+
+  }
+
+  .to-top {
+
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: var(--fs-8);
+    padding: .5rem;
+    box-shadow: .1rem .5rem .4rem #c4c4c3;
+    right: 2.5rem;
+    top: 70%;
+  }
+
+
+  .input-container {
+    width: 100%;
+    /*margin: 20px auto 25px auto;*/
+  }
+
+  .input-mail {
+    width: 54% !important;
+  }
+
+  .input-tel {
+    width: 45% !important;
+  }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    display: block;
+  }
+
+  .pl-2 {
+    padding-left: 0 !important;
+    padding: 0;
+  }
+
+  .ml-2 {
+    margin-left: 1rem !important;
+  }
+
+  .snip1445 {
+    width: auto;
+    height: auto;
+  }
+
+
+  .snip1445 figcaption {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: .5rem;
+  }
+
+  .snip1445 h2,
+  .snip1445 h4 {
+    font-size: .75rem;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+
+  .input-container {
+    width: 100%;
+    /*margin: 20px auto 25px auto;*/
+  }
+
+  .input-mail {
+    width: 54% !important;
+  }
+
+  .input-tel {
+    width: 45% !important;
+  }
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    display: block;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  body {
+    display: block;
+  }
+}
