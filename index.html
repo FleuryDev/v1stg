@@ -895,8 +895,8 @@
 
             var $nav_bar = $('#a-btn');
             var $topelm = $('#lkTop');
-            //(window_height - $nav_bar.height()) <= scroll_top
-            if (scroll_top > hdh * 0.6) {
+            //(window_height - $nav_bar.height()) <= scroll_top ||||| hdh * 0.6
+            if (scroll_top > window_height) {
                 if (!$topelm.hasClass('elm-visible')) {
                     $topelm.removeClass('elm-invisible')
 
