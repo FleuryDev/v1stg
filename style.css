@@ -478,9 +478,17 @@
   margin-left: 5rem !important;
   margin-right: 5rem !important;
   position: relative;
-  margin-top: 5rem;
+  margin-top: 4rem;
   padding-left: 3rem;
   padding-right: 5rem;
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem !important;
+  margin-top: 1rem;
 }
 
 .div-li {
