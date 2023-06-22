@@ -493,7 +493,7 @@ body {
   background-color: #e5e5ff;
   border: 1px solid transparent;
   border-radius: .6rem;
-  font-family: 'Inter', sans-serif;
+
 }
 
 .logo {
@@ -1938,17 +1938,85 @@ textarea {
 
 // Small devices (landscape phones, 576px and up) */
 @media only screen and (max-width: 575px) {
-  body {
 
+  *,
+  body {
+    max-width: 576px !important;
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  body {
     width: 100vw !important;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .header-elms {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: grid;
+    width: 100%;
+    padding: .1rem .4rem .1rem .4rem;
+  }
+
+  .stg-body {
+    display: block;
+    width: 100%;
+    padding: .1rem;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    position: relative;
+    margin-top: 3rem !important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+  }
+
+  .txt-infos-stg {
+    padding: .2rem;
+    width: 100%;
+    margin: 0 !important;
+    display: flex;
+
+  }
+
+  .ms-p {
+    padding: .1rem;
+    margin-top: 1.3rem;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .h1 {
+    font-size: var(--fs-7);
+  }
+
+  .stg-info {
+    font-size: var(--fs-9);
   }
 
   .slider section .div-li-2 {
     grid-template-columns: 1fr;
   }
 
+  .stg-header-container {
+    width: 100vw !important;
+    backdrop-filter: blur(50px);
+    padding: .5rem;
+  }
+
   .mobile-nav {
     width: 90vw;
+    top: 3.2rem;
+    height: 94vh;
+
   }
 
   .slider section .carousel-text {
@@ -1958,6 +2026,40 @@ textarea {
     justify-content: center;
     align-items: center;
     top: 50%;
+  }
+
+  .carousel {
+    margin: 0 !important;
+    padding: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .next,
+  .prev {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .next {
+    right: 20px;
+  }
+
+  .prev {
+    left: 20px;
+  }
+
+  .socialnav {
+    display: none;
+  }
+
+  .container {
+    height: 45vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .ms-p {
@@ -1986,17 +2088,6 @@ textarea {
     z-index: 0;
   }
 
-  .stg-body {
-    display: block;
-    width: 100%;
-    padding: .6rem;
-    margin-left: 1rem !important;
-    margin-right: 1rem !important;
-    position: relative;
-    margin-top: 4rem;
-    padding-left: 2rem;
-    padding-right: 4rem;
-  }
 
 
   .stg-service,
@@ -2012,7 +2103,7 @@ textarea {
   }
 
   .logo {
-    width: 9rem;
+    width: 50%;
     position: relative;
     left: 0 !important;
     margin: 0 !important;
@@ -2043,8 +2134,8 @@ textarea {
   }
 
   .snip1445 {
-    width: auto;
-    height: auto;
+    width: 70vw !important;
+    height: 65vw;
   }
 
 
@@ -2062,9 +2153,47 @@ textarea {
     text-transform: uppercase;
   }
 
+  .mobil-mw-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .swiper {
+    width: 90vw !important;
+  }
+
+  .mobil-order-1 {
+    order: 1;
+  }
+
+  .mobil-order-2 {
+    order: 2;
+  }
+
+  .process-detail {
+    width: 95vw;
+    justify-content: center;
+  }
+
+  .pross2 {
+    margin-left: .2rem;
+  }
+
+  .pross3 {
+    margin-left: .1rem;
+  }
+
+  .swiper2 {
+    width: 95vw;
+    height: 20rem;
+    padding: 2rem;
+
+  }
+
   .team-container {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    width: 90vw !important;
+    justify-self: center;
+    align-self: center;
   }
 
   .btn-circle-devis {
@@ -2082,10 +2211,13 @@ textarea {
     font-size: var(--fs-8);
     padding: .5rem;
     box-shadow: .1rem .1rem .3rem #d6d6d6;
-    right: 2rem;
+    left: 80%;
     top: 70%;
   }
 
+  .mobil-p-2 {
+    padding: .6rem;
+  }
 
   .input-container {
     width: 100%;
@@ -2100,13 +2232,19 @@ textarea {
     width: 100% !important;
   }
 
+  .stg-info-m {
+    grid-template-columns: 1fr;
+  }
+
   .stg-info {
     position: relative;
     width: 100%;
+    padding: .6rem;
+
   }
 
   .counters {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr;
     gap: 3rem 2rem;
   }
 
@@ -2142,41 +2280,46 @@ textarea {
 
     padding-left: .4rem;
     text-align: left;
-    display: none;
+    margin-top: 1rem;
+
+  }
+
+  .mobil-mt-1 {
+    margin-top: 1rem;
   }
 
   .footer {
+    position: relative;
     width: 98vw;
     margin-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .footer-group {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr;
+    width: 100%;
     gap: 0px 0px;
-    grid-template-areas:
-      "group-1 group-2"
-      "group-3 group-3"
-      ". .";
+
   }
 
   .group-1 {
-    grid-area: group-1;
+    order: 1;
   }
 
   .group-2 {
-    grid-area: group-2;
+    order: 2;
   }
 
   .group-3 {
-    grid-area: group-3;
+    order: 3;
   }
 
   .group-3 {
     position: relative;
     display: grid !important;
-    grid-template-columns: 50fr 50fr;
+    grid-template-columns: 1fr;
 
   }
 
@@ -2184,7 +2327,7 @@ textarea {
 
   .politiques {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     white-space: nowrap;
   }
 
