@@ -2025,7 +2025,15 @@ textarea {
     width: 90%;
     justify-content: center;
     align-items: center;
-    top: 50%;
+    top: 25%;
+  }
+
+  .carousel-text h1 {
+    font-size: var(--fs-7);
+  }
+
+  .carousel-text div.txt-50 {
+    font-size: var(--fs-9);
   }
 
   .carousel {
@@ -2939,3 +2947,5 @@ textarea {
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {}
+
+/* BY FLEURY DEV ON JUIN, 23 2023 AT 00:24 AM  */
