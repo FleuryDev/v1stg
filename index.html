@@ -12,9 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-
-
+    <link rel="stylesheet" href="script/magicsuggest/magicsuggest-min.css">
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.min.css" rel="stylesheet">
     <title>Strategy Fine</title>
 
 </head>
@@ -100,17 +99,115 @@
                 </div>
                 <div class="search-bar">
                     <form action="" method="get">
-                        <input type="search" name="" id="input" placeholder="Search" value="" title="">
+                        <input type="search" name="" id="inputMD" placeholder="Search" value="" title="">
                         <button type="submit"><i class="fa-solid fa-magnifying-glass"
                                 style="color: #868080;"></i></button>
                     </form>
                 </div>
-                <button class="md-btn-nav" type="button"><i class="fa-solid fa-bars"></i></button>
+                <button id="nav" class="md-btn-nav" type="button"><i class="fa-solid fa-bars"></i></button>
             </div>
         </header>
 
         <div class="stg-body">
+            <nav class="mobile-nav">
+                <div class="search-mobile">
+                    <form action="" method="get">
+                        <div class="search-template ">
+                            <label for="inputMobi"></label>
+                            <input type="search" name="" id="inputMobi" class="form-control mobil" value="" title="">
+                            <button type="submit"><i class="fa-solid fa-search"></i></button>
 
+                        </div>
+
+                    </form>
+
+
+                </div>
+                <div class="serach-autoComplete">
+                    <!-- <div id="magicsuggest"></div> -->
+                </div>
+                <section class="ac-container">
+                    <div>
+                        <input id="ac-1" name="accordion-1" type="radio" checked="">
+                        <label for="ac-1"><a class="xElm" href="">Développement </a></label>
+                        <article class="ac-small">
+                            <p><a href="">Sites web</a>
+                                <a href=""> Sites E-commerces</a>
+                                <a href=""> Applications Mobiles</a>
+                            </p>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-2" name="accordion-1" type="radio">
+                        <label for="ac-2"><a class="xElm" href="">Référencement </a></label>
+                        <article class="ac-medium">
+                            <p><a href=""> Référencement SEO</a>
+
+                                <a href=""> Référencement SEA</a>
+                            </p>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-3" name="accordion-1" type="radio">
+                        <label for="ac-3"><a class="xElm" href="">Design UI/UX </a></label>
+                        <article class="ac-large">
+                            <p><a href="">Maquette de site</a>
+                                <a href=""> Refonte de site</a>
+                            <div class="mobile-mt-3">
+                                <input id="ac-3" name="accordion-1" type="radio">
+                                <label for="ac-3"><a class="xElm" href=""> Design Graphique </a></label>
+                                <article class="ac-large">
+                                    <p>
+                                        <a href=""> Logo</a>
+                                        <a href="">Charte Graphique</a>
+                                        <a href="">Affiche</a>
+                                        <a href="">Carousel</a>
+                                    </p>
+                                </article>
+                            </div>
+
+                            </p>
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-4" name="accordion-1" type="radio">
+                        <label for="ac-4"><a class="xElm" href="">Stratégie de contenu </a></label>
+                        <article class="ac-large2">
+                            <p><a href="">Landing page</a>
+
+                                <a href=""> Gestion des réseaux sociaux </a>
+
+
+                                <a href="">Montage vidéo</a>
+                            </p>
+                            <div class="mobile-mt-3">
+                                <input id="ac-33" name="accordion-1" type="radio">
+                                <label for="ac-33"><a class="xElm" href=""> Rédaction web SEO </a></label>
+                                <article class="ac-large">
+                                    <p>
+                                        <a href=""> Rédaction simple</a>
+                                        <a href=""> Rédaction optimisé SEO</a>
+                                        <a href=""> Rédaction premium/copywrighting</a>
+                                    </p>
+                                </article>
+                            </div>
+
+                        </article>
+                    </div>
+                    <div>
+                        <input id="ac-4" name="accordion-1" type="radio">
+                        <label for="ac-4"><a class="xElm" href="">Blog </a></label>
+                        <article class="ac-large">
+                            <p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we
+                                gonna tell everyone. How it's possible, how it's done, what the dangers are. But then
+                                why fifty years in the future when the spacecraft encounters a black hole does the
+                                computer call it an 'unknown entry event'? Why don't they know? If they don't know, that
+                                means we never told anyone. And if we never told anyone it means we never made it back.
+                                Hence we die down here. Just as a matter of deductive logic. </p>
+                        </article>
+                    </div>
+                </section>
+            </nav>
 
             <div class="container">
                 <div class="carousel">
@@ -842,6 +939,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script/magicsuggest/magicsuggest-min.js"></script>
     <script>
         AOS.init({
             easing: 'ease-in-out-sine'
@@ -861,9 +961,138 @@
                 });
             });
 
+            $('#nav').click(function () {
+                if ($('.mobile-nav').hasClass('nav-active')) {
+                    $('.mobile-nav').removeClass('nav-active');
+                } else {
+                    $('.mobile-nav').addClass('nav-active');
+                }
+            }
+            );
+
+            $('#inputMobi').focusin(function () {
+                $('.ac-container').addClass('mobile-focus');
+                $('.serach-autoComplete').addClass('autocomplete-active')
+            })
+            $('#inputMobi').focusout(function () {
+                $('.ac-container').removeClass('mobile-focus');
+                $('.serach-autoComplete').removeClass('autocomplete-active')
+
+            })
+            var data = [
+                { value: "AL", label: "Alabama" },
+                { value: "AK", label: "Alaska" },
+                { value: "AZ", label: "Arizona" },
+                { value: "AR", label: "Arkansas" },
+                { value: "CA", label: "California" },
+                { value: "CO", label: "Colorado" },
+                { value: "CT", label: "Connecticut" },
+                { value: "DE", label: "Delaware" },
+                { value: "FL", label: "Florida" },
+                { value: "GA", label: "Georgia" },
+                { value: "HI", label: "Hawaii" },
+                { value: "ID", label: "Idaho" },
+                { value: "IL", label: "Illinois" },
+                { value: "IN", label: "Indiana" },
+                { value: "IA", label: "Iowa" },
+                { value: "KS", label: "Kansas" },
+                { value: "KY", label: "Kentucky" },
+                { value: "LA", label: "Louisiana" },
+                { value: "ME", label: "Maine" },
+                { value: "MD", label: "Maryland" },
+                { value: "MA", label: "Massachusetts" },
+                { value: "MI", label: "Michigan" },
+                { value: "MN", label: "Minnesota" },
+                { value: "MS", label: "Mississippi" },
+                { value: "MO", label: "Missouri" },
+                { value: "MT", label: "Montana" },
+                { value: "NE", label: "Nebraska" },
+                { value: "NV", label: "Nevada" },
+                { value: "NH", label: "New Hampshire" },
+                { value: "NJ", label: "New Jersey" },
+                { value: "NM", label: "New Mexico" },
+                { value: "NY", label: "New York" },
+                { value: "NC", label: "North Carolina" },
+                { value: "ND", label: "North Dakota" },
+                { value: "OH", label: "Ohio" },
+                { value: "OK", label: "Oklahoma" },
+                { value: "OR", label: "Oregon" },
+                { value: "PA", label: "Pennsylvania" },
+                { value: "RI", label: "Rhode Island" },
+                { value: "SC", label: "South Carolina" },
+                { value: "SD", label: "South Dakota" },
+                { value: "TN", label: "Tennessee" },
+                { value: "TX", label: "Texas" },
+                { value: "UT", label: "Utah" },
+                { value: "VT", label: "Vermont" },
+                { value: "VA", label: "Virginia" },
+                { value: "WA", label: "Washington" },
+                { value: "WV", label: "West Virginia" },
+                { value: "WI", label: "Wisconsin" },
+                { value: "WY", label: "Wyoming" }
+            ];
+            var availableTags = [
+                "ActionScript",
+                "AppleScript",
+                "Asp",
+                "BASIC",
+                "C",
+                "C++",
+                "Clojure",
+                "COBOL",
+                "ColdFusion",
+                "Erlang",
+                "Fortran",
+                "Groovy",
+                "Haskell",
+                "Java",
+                "JavaScript",
+                "Lisp",
+                "Perl",
+                "PHP",
+                "Python",
+                "Ruby",
+                "Scala",
+                "Scheme"
+            ];
+
+            function highlightText(text, $node) {
+                var searchText = $.trim(text).toLowerCase(), currentNode = $node.get(0).firstChild, matchIndex, newTextNode, newSpanNode;
+                while ((matchIndex = currentNode.data.toLowerCase().indexOf(searchText)) >= 0) {
+                    newTextNode = currentNode.splitText(matchIndex);
+                    currentNode = newTextNode.splitText(searchText.length);
+                    newSpanNode = document.createElement("span");
+                    newSpanNode.className = "highlight";
+                    currentNode.parentNode.insertBefore(newSpanNode, currentNode);
+                    newSpanNode.appendChild(newTextNode);
+                }
+            }
+            $(".mobil").autocomplete({
+                source: availableTags
+            }).data("ui-autocomplete")._renderItem = function (ul, item) {
+                var $div = $("<div></div>").text(item.label);
+                highlightText(this.term, $div);
+                return $("<li></li>").append($div).appendTo(ul);
+            };
+            $("#inputMD").autocomplete({
+                source: availableTags
+            }).data("ui-autocomplete")._renderItem = function (ul, item) {
+                var $div = $("<div></div>").text(item.label);
+                highlightText(this.term, $div);
+                return $("<li></li>").append($div).appendTo(ul);
+            };
+
+
+
+        });
+
+
+        $('#magicsuggest').magicSuggest({
+
         });
 
     </script>
+
 
     <!-- <script>
         const xtext = document.querySelector('.btn-circle-devis');
