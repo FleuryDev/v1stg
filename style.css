@@ -184,12 +184,13 @@ body {
 }
 
 .mobile-nav {
-  position: fixed;
-  height: 91vh;
+  position: fixed !important;
+  overflow-y: scroll;
+  min-height: 91vh;
   bottom: 0;
   right: -100VW;
   width: 60vw;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(90px);
   background-color: rgba(255, 255, 255, .4);
   box-shadow: .2rem .2rem .9rem rgb(213, 213, 213);
   z-index: 16;
@@ -295,7 +296,7 @@ body {
 }
 
 .ac-container label a {
-  color: #2b2929;
+  color: #1d1b1b;
   text-decoration: none;
 }
 
@@ -303,7 +304,7 @@ body {
 .ac-container input:checked+label:hover {
   position: relative;
   background: #f1f2f3;
-  color: #2b2929;
+  color: #201f1f;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
   height: 30px;
@@ -381,7 +382,7 @@ body {
   float: left;
   width: 100%;
   font-style: normal;
-  color: #555252;
+  color: #474545;
   line-height: 23px;
   font-size: 1rem !important;
   padding: .6rem;
@@ -408,11 +409,15 @@ body {
 }
 
 .ac-container input:checked~article.ac-large {
-  height: 230px;
+  height: 260px;
 }
 
 .ac-container input:checked~article.ac-large2 {
   height: 330px;
+}
+
+.ac-container input:checked~article.ac-large .mobile-mt-3 input:checked~article.ac-large3 {
+  height: 300px;
 }
 
 .btn {
@@ -1984,6 +1989,10 @@ textarea {
 
   }
 
+  .ms-text-justify {
+    text-align: justify;
+  }
+
   .ms-p {
     padding: .1rem;
     margin-top: 1.3rem;
@@ -2008,12 +2017,12 @@ textarea {
 
   .stg-header-container {
     width: 100vw !important;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(100px);
     padding: .5rem;
   }
 
   .mobile-nav {
-    width: 90vw;
+    width: 80vw;
     top: 3.2rem;
     height: 94vh;
 
@@ -2132,14 +2141,37 @@ textarea {
     border: 1px solid transparent;
   }
 
-  .pl-2 {
-    padding-left: 0 !important;
-    padding: 0;
+  .ms-ml-0 {
+    margin-left: 0rem !important;
   }
 
-  .ml-2 {
-    margin-left: 1rem !important;
+  .mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
+
+  .ms-m-t-1 {
+    margin-top: .6rem !important;
+  }
+
+  .ms-p-1 {
+    padding: .9rem;
+  }
+
+  .ms-w-100 {
+    width: 100% !important;
+    align-self: center;
+    justify-self: center;
+    margin: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .pl-2 {
+    padding-left: 0 !important;
+    padding: 0 !important;
+  }
+
+
 
   .snip1445 {
     width: 70vw !important;
@@ -2344,7 +2376,7 @@ textarea {
 @media only screen and (min-width: 576px) and (max-width: 699px) {
 
   .mobile-nav {
-    width: 80vw;
+    width: 65vw;
   }
 
   .slider section .div-li-2 {
@@ -2374,6 +2406,11 @@ textarea {
     margin-left: auto !important;
     margin-right: auto !important;
 
+  }
+
+  .md-w-100 {
+    width: 80%;
+    margin: 0 !important;
   }
 
   .txt-infos-stg {
@@ -2593,7 +2630,7 @@ textarea {
 @media only screen and (min-width: 700px) and (max-width: 867px) {
 
   .mobile-nav {
-    width: 70vw;
+    width: 45vw;
   }
 
   .stg-body {
@@ -2754,6 +2791,11 @@ textarea {
     text-align: left;
   }
 
+  .md-w-100 {
+    width: 100%;
+    margin: 0 !important;
+  }
+
   .footer {
     width: 90vw;
     margin-bottom: 1rem;
@@ -2762,7 +2804,8 @@ textarea {
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media only screen and(min-width: 868px) and (max-width: 992px) {
+@media only screen and (min-width: 868px) and (max-width: 992px) {
+
 
   .stg-body {
     display: block;
@@ -2774,6 +2817,11 @@ textarea {
     margin-top: 4rem;
     padding-left: 3rem;
     padding-right: 5rem;
+  }
+
+  .md-w-100 {
+    width: 90%;
+    margin: 0 !important;
   }
 
 
@@ -2841,7 +2889,7 @@ textarea {
   }
 
   .team-container {
-    grid-template-columns: 45fr 45fr;
+    grid-template-columns: 45fr 45fr !important;
     gap: 2rem;
   }
 
