@@ -617,7 +617,7 @@ body {
 
 .btn-circle-devis {
   position: fixed;
-  top: 40%;
+  top: 60%;
   justify-content: center;
   align-content: center;
   right: 3rem;
@@ -1874,8 +1874,8 @@ textarea {
   border: 1px solid transparent;
   border-radius: 50%;
   box-shadow: .1rem .5rem .4rem #b1b1b0;
-  right: 6rem;
-  top: 70%;
+  right: 5rem;
+  top: 85%;
 
   transform: translate(50%, 0%);
   background-color: #ececec;
