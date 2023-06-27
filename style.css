@@ -1772,8 +1772,9 @@ textarea {
 
 .footer {
   padding: .8rem 1rem 1rem .8rem;
-  background: linear-gradient(45deg, #0f0e0e, #3a3a38, #242323);
+  /* background: linear-gradient(45deg, #0f0e0e, #3a3a38, #242323); */
   width: 85vw;
+  background-color: #000;
   position: relative;
 
   z-index: 1;
@@ -1933,6 +1934,16 @@ textarea {
 
 .elm-invisible {
   display: none !important;
+}
+
+.group-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  justify-items: stretch;
+  height: 100%;
 }
 
 /* BY FLEURY DEV ON JUIN, 12 2023 AT 11:17 PM  */
