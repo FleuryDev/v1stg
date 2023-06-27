@@ -1904,7 +1904,7 @@ textarea {
   box-shadow: .2rem .9rem 1rem #cdf7cd;
   border-color: transparent;
   transition: all .3s linear;
-  transform: scale(1.2);
+  transform: scale(1.01);
 }
 
 .btn_blue--secondary {
