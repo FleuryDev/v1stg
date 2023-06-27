@@ -528,8 +528,8 @@ body {
   width: auto;
   margin-left: auto !important;
   margin-right: auto !important;
-  margin-top: auto !important;
-  margin-bottom: auto !important;
+  margin-top: .3rem !important;
+  margin-bottom: .3rem !important;
 }
 
 .search-bar form {
