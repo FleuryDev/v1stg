@@ -1,0 +1,7 @@
+$default_fw : 100;
+
+$map_fw : cal_dimension($default_fw, 9);
+
+.sf-fw {
+    @include adjuster(font-weight, $map_fw, false);
+}

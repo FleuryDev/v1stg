@@ -1,6 +1,6 @@
 $default_boreder :1px;
 
-$border_size_map : cal_dimension($default_boreder,10);
+$border_size_map : cal_dimension($default_boreder, 10);
 
 // dashed - Defines a dashed border
 // dotted - Defines a dotted border
@@ -15,24 +15,29 @@ $border_size_map : cal_dimension($default_boreder,10);
 
 
 $style :('dt':dotted,
-'sd':solid, 
-'db':double,
-'gv':groove,
-'rg':ridge, 
-'in':inset, 
-'out':outset,
-'none':none, 
-'hd':hidden);
-@mixin border($size,$style,$color){
-    @each $a,$b in $style{
-        @each $c , $d in $size{
-            &_#{$a}-#{$c}{
-                border: $d  $b $color;
+    'sd':solid,
+    'db':double,
+    'gv':groove,
+    'rg':ridge,
+    'in':inset,
+    'out':outset,
+    'none':none,
+    'hd':hidden);
+
+@mixin border($size, $style, $color) {
+
+    @each $a,
+    $b in $style {
+
+        @each $c ,
+        $d in $size {
+            &_#{$a}-#{$c} {
+                border: $d $b $color;
             }
         }
     }
 }
 
-.b{
-    @include border($border_size_map,$style ,transparent);
+.sf-b {
+    @include border($border_size_map, $style , transparent);
 }

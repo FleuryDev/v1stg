@@ -1,0 +1,6 @@
+$min_width_box : 8.333333333333333%;
+$w_map : cal_dimension($min_width_box, 12);
+
+.sf-w {
+    @include adjuster(width, $w_map, false);
+}

@@ -1,34 +1,36 @@
+.sf-btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  // Share hover and focus styles
 
+  text-decoration: none;
 
-.btn {
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    user-select: none;
-    // Share hover and focus styles
-    
-      text-decoration: none;
-  
-    &:focus,
-    &.focus {
-      outline: 0;
-      
-    }
-    &-bg{
-      @each $key , $val in $def_colors{
-        @if($key  == "bprimary" or $key=="gprimary" or $key =="green" or $key=="indigo" or $key=="gray-dark" or $key== "gray"){
-          &-#{$key}{
-            background-color: $val;
-            color: white;
-          }
-        }@else{
-          &-#{$key}{
-            background-color: $val;
-            color: black;
-          }
+  &:focus,
+  &.focus {
+    outline: 0;
+
+  }
+
+  &-bg {
+
+    @each $key ,
+    $val in $def_colors {
+      @if($key =="bprimary" or $key=="gprimary" or $key =="green" or $key=="indigo" or $key=="gray-dark" or $key=="gray") {
+        &-#{$key} {
+          background-color: $val !important;
+          color: white !important;
+        }
+      }
+
+      @else {
+        &-#{$key} {
+          background-color: $val !important;
+          color: black !important;
         }
       }
     }
+  }
 }
-

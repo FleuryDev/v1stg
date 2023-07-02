@@ -470,6 +470,7 @@ body {
 
 .stg-container {
   display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -741,6 +742,7 @@ body {
   margin-top: 4rem;
   padding-left: 3rem;
   padding-right: 5rem;
+  justify-self: center;
 }
 
 .img-logo {

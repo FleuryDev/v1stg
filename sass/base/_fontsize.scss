@@ -2,8 +2,8 @@ $font_size_default: .8rem;
 
 /*/ in = 96 px, 1 cm = 37,8 px et 1 mm = 3,78 px. 1px =0.06rem*/
 
-$map_fs : cal_dimension($font_size_default,5);
+$map_fs : cal_dimension($font_size_default, 5);
 
-.fs{
-    @include adjuster(font-size,$map_fs,false);
+.sf-fs {
+    @include adjuster(font-size, $map_fs, false);
 }

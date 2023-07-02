@@ -1,37 +1,47 @@
 // GENERATEUR DE MAP POUR FONT-SIZE PADDING MARGIN
-@function cal_dimension($default_value,$end){
-    $temp :();
-    @for $i from 0 to $end+1  {
-        
-       $temp : map-merge($temp,($i : $i*$default_value));
+@function cal_dimension($default_value, $end) {
+    $temp : ();
+
+    @for $i from 0 to $end+1 {
+
+        $temp : map-merge($temp, ($i : $i*$default_value));
     }
+
     @return $temp;
 }
 
 //CREATION DE MARGIN PADDING FONT-SIZE
 
-@mixin adjuster($property,$pad_map,$arg){
-    @if($arg==false){
-        @each $key , $val in $pad_map{
-            &-#{$key}{
-                #{$property}:map-get($pad_map , $key ) ;
-            
+@mixin adjuster($property, $pad_map, $arg) {
+    @if($arg==false) {
+
+        @each $key ,
+        $val in $pad_map {
+            &-#{$key} {
+                #{$property}: map-get($pad_map , $key ) !important;
+
             }
         }
-    }@else{
-        @each $key , $val in $pad_map{
-            &-#{$key}{
-                #{$property}-#{$arg} :map-get($pad_map , $key) ;
+    }
+
+    @else {
+
+        @each $key ,
+        $val in $pad_map {
+            &-#{$key} {
+                #{$property}-#{$arg}: map-get($pad_map , $key) !important;
             }
         }
     }
 }
 
 //CREATION D'ELEMENT SPECIALISE: UNIQUEMENT MARGIN PADDING (margin-top,...)
-@mixin sous_adjuster($prop,$first_map,$snd_map){
-    @each $i , $j in $snd_map{
-        &-#{$j}{
-            @include adjuster($prop,$first_map,$j);
+@mixin sous_adjuster($prop, $first_map, $snd_map) {
+
+    @each $i ,
+    $j in $snd_map {
+        &#{$i} {
+            @include adjuster($prop, $first_map, $j);
         }
     }
 }

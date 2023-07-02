@@ -1,16 +1,36 @@
 $padding_default : .6rem;
 
-$pad_map : cal_dimension($padding_default,10 );
+$pad_map : cal_dimension($padding_default, 10);
 // $pad_map :(0:.6rem , 1:.6rem, 2:1.2rem);
-  
-$sous_padd : (1:'top', 2:'left',3:'right',4:'bottom');
 
-.p{
-    @include adjuster(padding,$pad_map,false) ;
-    @include sous_adjuster(padding,$pad_map,$sous_padd);
+$sous_padd : ('t':'top', 'l':'left', 'r':'right', 'b':'bottom');
+
+.sf-p {
+    @include adjuster(padding, $pad_map, false);
+    @include sous_adjuster(padding, $pad_map, $sous_padd);
 }
 
-.m{
-    @include adjuster(margin,$pad_map,false);
-    @include sous_adjuster(margin,$pad_map,$sous_padd);
+.sf-px-auto {
+    padding-left: auto !important;
+    padding-right: auto !important;
+}
+
+.sf-py-auto {
+    padding-top: auto !important;
+    padding-bottom: auto !important;
+}
+
+.sf-m {
+    @include adjuster(margin, $pad_map, false);
+    @include sous_adjuster(margin, $pad_map, $sous_padd);
+}
+
+.sf-mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.sf-my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
 }
