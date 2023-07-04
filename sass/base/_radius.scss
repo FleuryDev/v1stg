@@ -6,6 +6,8 @@ $sous_br_map : ('tl':"top-left-radius", 'tr':"top-right-radius", 'bl':"bottom-le
 .sf-br {
     @include adjuster(border-radius, $br_map, false);
     @include sous_adjuster(border, $br_map, $sous_br_map);
+    @include Responsive_adjuster(border-radius, $br_map, false);
+    @include Responsive_sous_adjuster(border, $br_map, $sous_padd);
 }
 
 .sf-br-50 {

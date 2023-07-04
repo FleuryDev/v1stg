@@ -1358,6 +1358,7 @@
 
 .sf-dflex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .sf-flex-col {
@@ -1462,6 +1463,20 @@
 
 .sf-w90 {
   width: 90% !important;
+}
+
+.sf-box_shadox-1 {
+  box-shadow: .3rem .3rem .3rem #b9bbbd;
+  transition: box-shadow .3s;
+}
+
+.sf-box_shadox-1:hover {
+  box-shadow: none;
+  transition: box-shadow .4s;
+}
+
+.sf-shadow-inset {
+  box-shadow: inset -1px -5px 5px #eaeaeb;
 }
 
 /*# sourceMappingURL=root.css.map */

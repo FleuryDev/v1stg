@@ -1,3 +1,19 @@
+$breackpoints_map: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+$breackpoints_map_max: (
+    XS: 576px,
+    SM: 768px,
+    MD: 992px,
+    LG: 1200px,
+    XL: 1400px
+);
+
 // GENERATEUR DE MAP POUR FONT-SIZE PADDING MARGIN
 @function cal_dimension($default_value, $end) {
     $temp : ();
@@ -35,6 +51,67 @@
     }
 }
 
+@mixin breakpoint-min($bp) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}
+
+@mixin breakpoint-max($bp) {
+    @media (max-width: calc($bp - 0.2px)) {
+        @content;
+    }
+}
+
+@mixin Responsive_adjuster($property, $pad_map, $arg) {
+    @if($arg==false) {
+
+        @each $index ,
+        $val in $breackpoints_map {
+            @include breakpoint-min($val) {
+
+                @each $key ,
+                $val in $pad_map {
+                    &-#{$index}-#{$key} {
+                        #{$property}: map-get($pad_map , $key ) !important;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    @else {
+
+        @each $index ,
+        $val in $breackpoints_map {
+            @include breakpoint-min($val) {
+
+                @each $key ,
+                $val in $pad_map {
+                    &-#{$index}-#{$key} {
+                        #{$property}-#{$arg}: map-get($pad_map , $key) !important;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+@mixin Responsive_sous_adjuster($prop, $first_map, $snd_map) {
+
+    @each $i ,
+    $j in $snd_map {
+        &#{$i} {
+            @include Responsive_adjuster($prop, $first_map, $j)
+        }
+    }
+}
+
 //CREATION D'ELEMENT SPECIALISE: UNIQUEMENT MARGIN PADDING (margin-top,...)
 @mixin sous_adjuster($prop, $first_map, $snd_map) {
 
@@ -44,4 +121,18 @@
             @include adjuster($prop, $first_map, $j);
         }
     }
+}
+
+
+@mixin continue_breackpoint-max {
+
+    @each $index ,
+    $val in $breackpoints_map_max {
+        @include breakpoint-max($val) {
+            &-#{$index} {
+                @content
+            }
+        }
+    }
+
 }

@@ -6,4 +6,6 @@ $map_fs : cal_dimension($font_size_default, 5);
 
 .sf-fs {
     @include adjuster(font-size, $map_fs, false);
+    @include Responsive_adjuster(font-size, $map_fs, false);
+
 }

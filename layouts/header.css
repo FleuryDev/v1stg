@@ -31,9 +31,12 @@
     width: 80%;
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
     position: relative;
-    justify-self: center;
+    justify-self: stretch !important;
     align-self: center;
+    justify-content: space-around;
 }
 
 .stg-service {

@@ -1,6 +1,46 @@
 $min_width_box : 8.333333333333333%;
 $w_map : cal_dimension($min_width_box, 12);
 
+
+
 .sf-w {
     @include adjuster(width, $w_map, false);
+    @include Responsive_adjuster(width, $w_map, false);
+}
+
+
+@function cal_dimension-trX($default_value, $end) {
+    $temp : ();
+
+    @for $i from 0 to $end+1 {
+
+        $temp : map-merge($temp, ($i : translateX($i*$default_value)));
+    }
+
+    @return $temp;
+}
+
+@function cal_dimension-trY($default_value, $end) {
+    $temp : ();
+
+    @for $i from 0 to $end+1 {
+
+        $temp : map-merge($temp, ($i : translateY($i*$default_value)));
+    }
+
+    @return $temp;
+}
+
+$tr_mapx : cal_dimension-trX(10%, 10);
+$tr_mapy : cal_dimension-trY(10%, 10);
+
+.sf-translateX {
+    @include adjuster(transform, $tr_mapx, false);
+    @include Responsive_adjuster(transform, $tr_mapx, false);
+}
+
+.sf-translateY {
+
+    @include adjuster(transform, $tr_mapy, false);
+    @include Responsive_adjuster(transform, $tr_mapy, false);
 }

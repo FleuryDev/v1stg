@@ -8,6 +8,9 @@ $sous_padd : ('t':'top', 'l':'left', 'r':'right', 'b':'bottom');
 .sf-p {
     @include adjuster(padding, $pad_map, false);
     @include sous_adjuster(padding, $pad_map, $sous_padd);
+    @include Responsive_adjuster(padding, $pad_map, false);
+    @include Responsive_sous_adjuster(padding, $pad_map, $sous_padd);
+
 }
 
 .sf-px-auto {
@@ -23,14 +26,27 @@ $sous_padd : ('t':'top', 'l':'left', 'r':'right', 'b':'bottom');
 .sf-m {
     @include adjuster(margin, $pad_map, false);
     @include sous_adjuster(margin, $pad_map, $sous_padd);
+    @include Responsive_adjuster(margin, $pad_map, false);
+    @include Responsive_sous_adjuster(margin, $pad_map, $sous_padd);
+
 }
 
 .sf-mx-auto {
     margin-left: auto !important;
     margin-right: auto !important;
+
+    @include continue_breackpoint-max {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
 }
 
 .sf-my-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
+
+    @include continue_breackpoint-max {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
 }
