@@ -2747,7 +2747,6 @@ textarea {
     right: .5rem;
     font-size: calc(var(--fs-9)*0.6);
     font-weight: 600;
-    background: #0000ff;
     border-radius: 50%;
     border: 1px solid transparent;
     height: 3.5rem;
@@ -2926,7 +2925,6 @@ textarea {
     right: .5rem;
     font-size: calc(var(--fs-9)*0.6);
     font-weight: 600;
-    background: #0000ff;
     border-radius: 50%;
     border: 1px solid transparent;
     height: 3.5rem;

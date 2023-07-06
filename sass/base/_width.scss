@@ -8,6 +8,14 @@ $w_map : cal_dimension($min_width_box, 12);
     @include Responsive_adjuster(width, $w_map, false);
 }
 
+$w_order : cal_dimension(1, 10);
+
+.order {
+    @include adjuster(order, $w_order, false);
+    @include Responsive_adjuster(order, $w_order, false);
+    @include Responsive_Adjuster(order, $w_order, false);
+}
+
 $d_map : (0:none);
 
 .sf-d-none {
