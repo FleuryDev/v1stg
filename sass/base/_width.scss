@@ -8,6 +8,16 @@ $w_map : cal_dimension($min_width_box, 12);
     @include Responsive_adjuster(width, $w_map, false);
 }
 
+$d_map : (0:none);
+
+.sf-d-none {
+    @include adjuster(display, $d_map, false);
+    @include Responsive_adjuster(display, $d_map, false);
+    @include Responsive_Adjuster(display, $d_map, false);
+
+
+}
+
 
 @function cal_dimension-trX($default_value, $end) {
     $temp : ();

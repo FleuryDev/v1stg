@@ -63,6 +63,55 @@ $breackpoints_map_max: (
     }
 }
 
+@mixin Responsive_Adjuster($property, $pad_map, $arg) {
+    @if($arg==false) {
+
+        @each $index ,
+        $val in $breackpoints_map_max {
+            @include breakpoint-max($val) {
+
+                @each $key ,
+                $val in $pad_map {
+                    &-#{$index}-#{$key} {
+                        #{$property}: map-get($pad_map , $key ) !important;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    @else {
+
+        @each $index ,
+        $val in $breackpoints_map_max {
+            @include breakpoint-max($val) {
+
+                @each $key ,
+                $val in $pad_map {
+                    &-#{$index}-#{$key} {
+                        #{$property}-#{$arg}: map-get($pad_map , $key) !important;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+@mixin Responsive_Sous_Adjuster($prop, $first_map, $snd_map) {
+
+    @each $i ,
+    $j in $snd_map {
+        &#{$i} {
+            @include Responsive_Adjuster($prop, $first_map, $j)
+        }
+    }
+}
+
 @mixin Responsive_adjuster($property, $pad_map, $arg) {
     @if($arg==false) {
 
