@@ -29,13 +29,9 @@
 .logo {
     background-image: #ffff !important;
     width: 80%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: auto !important;
-    margin-bottom: auto !important;
     position: relative;
-    justify-self: stretch !important;
-    align-self: center;
+    justify-self: center !important;
+    align-self: stretch;
     justify-content: space-around;
 }
 

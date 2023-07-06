@@ -502,14 +502,22 @@ body {
 
 }
 
+.logo_a {
+  display: flex;
+  position: relative;
+  margin: 0 !important;
+  justify-self: center;
+  padding: 0 !important;
+  justify-content: center;
+  align-content: center;
+}
+
 .logo {
   background-image: #ffff !important;
   width: 80%;
   margin-left: auto !important;
   margin-right: auto !important;
   position: relative;
-  justify-self: center;
-  align-self: center;
 }
 
 .stg-service {
