@@ -1524,4 +1524,12 @@
   opacity: 0;
 }
 
+.sf-section-active {
+  background: #ffff;
+  padding-block: .6rem;
+
+  border-radius: .6em;
+
+}
+
 /*# sourceMappingURL=root.css.map */
