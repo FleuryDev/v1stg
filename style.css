@@ -9,6 +9,65 @@
   /* white-space: nowrap; */
 }
 
+.sf-loader {
+  position: absolute;
+  z-index: 222289;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(250, 250, 250, 0.6);
+  backdrop-filter: blur(90px);
+
+}
+
+.custom-loader {
+  width: 50px;
+  height: 50px;
+  display: grid;
+}
+
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  --c: radial-gradient(farthest-side, #00b200 92%, #0000);
+  background:
+    var(--c) 50% 0,
+    var(--c) 50% 100%,
+    var(--c) 100% 50%,
+    var(--c) 0 50%;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  animation: s2 1s infinite;
+}
+
+.custom-loader::before {
+  margin: 4px;
+  filter: hue-rotate(45deg);
+  background-size: 8px 8px;
+  animation-timing-function: linear
+}
+
+@keyframes s2 {
+  100% {
+    transform: rotate(.5turn)
+  }
+}
+
+.sf-loader img {
+  width: 20rem;
+  margin-bottom: 3rem;
+}
+
+.loader-out {
+  transition: all .4s ease-out;
+  opacity: 0;
+  display: none;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -1886,12 +1945,12 @@ textarea {
 }
 
 .ccopy a {
-  color: white;
+  color: #181717;
   transition: color.4s;
 }
 
 .ccopy a:hover {
-  color: #181717;
+  color: white;
   transition: color.4s;
 }
 

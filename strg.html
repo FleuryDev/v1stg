@@ -26,6 +26,10 @@
 </head>
 
 <body class="container-fluid m-0">
+    <div class="sf-loader">
+        <img src="img/Stratégy-FineACCl_-_copie_1-removebg-preview.png" alt="">
+        <div class="custom-loader"></div>
+    </div>
     <main class="stg-container mx-auto" id="top">
         <header class="stg-header-container">
             <div class="header-elms fs8">
@@ -527,6 +531,10 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="script/magicsuggest/magicsuggest-min.js"></script>
     <script>
+        const loader = document.querySelector('.sf-loader');
+        window.addEventListener('load', () => {
+            loader.classList.add('loader-out');
+        });
         AOS.init({
             easing: 'ease-in-out-sine'
         });

@@ -1525,7 +1525,7 @@
 }
 
 .sf-section-active {
-
+  padding-bottom: .1rem !important;
   border-bottom: 1px solid #000 !important;
 
 }
