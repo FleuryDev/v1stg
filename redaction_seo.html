@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="script/magicsuggest/magicsuggest-min.css">
     <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sass/root.css">
@@ -38,6 +36,10 @@
 </head>
 
 <body class="container-fluid m-0">
+    <div class="sf-loader">
+        <img src="img/Stratégy-FineACCl_-_copie_1-removebg-preview.png" alt="">
+        <div class="custom-loader"></div>
+    </div>
     <main class="stg-container mx-auto" id="top">
         <header class="stg-header-container">
             <div class="header-elms fs8">
@@ -48,13 +50,13 @@
 
                 <div class="stg-service">
                     <ul class="">
-                        <li><a class="xElm" href="dev.html">Développement </a>
+                        <li><a class="xElm " href="dev.html">Développement </a>
                             <ul class="sous-service s1 stg-hover">
                                 <li><a href="refont.html"> Refonte de site</a>
                                 </li>
                                 <li><a href="site.html">Sites web</a></li>
                                 <li><a href="ecommerce.html"> Sites E-commerces</a></li>
-                                <li><a href="applis.html"> Applications Mobiles</a></li>
+                                <li class="sf-section-active"><a href="applis.html"> Applications Mobiles</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -92,19 +94,15 @@
                 </div>
                 <div class="stg-service txt-nowrap">
                     <ul>
-                        <li><a class="xElm" href="strg.html">Stratégie de contenu </a>
+                        <li><a class="xElm sf-section-active" href="strg.html">Stratégie de contenu </a>
                             <ul class="sous-service s1 stg-hover">
                                 <li><a href="resaux_social.html"> Gestion des réseaux sociaux </a>
-                                    <!-- <ul class="sous-service  txt-nowrap sst stg-hover">
-                                        <li><a href="">1 post par semaine </a></li>
-                                        <li><a href=""> 3 posts par semaine</a></li>
-                                        <li><a href=""> 5 posts par semaine</a></li>
-                                        <li><a href=""> 7 posts par semaine</a></li>
-                                    </ul> -->
+
                                 </li>
 
                                 <li><a href="video.html">Montage vidéo</a></li>
-                                <li><a class="xElm" href="redaction_seo.html"> Rédaction web SEO </a>
+                                <li class="sf-section-active"><a class="xElm" href="redaction_seo.html"> Rédaction web
+                                        SEO </a>
                                     <ul class="sous-service sst txt-nowrap stg-hover">
                                         <li><a href="redaction_seo.html#simple"> Rédaction simple</a></li>
                                         <li><a href="redaction_seo.html#optimise"> Rédaction optimisé SEO</a></li>
@@ -130,7 +128,8 @@
                 <button id="nav" class="md-btn-nav" type="button"><i class="fa-solid fa-bars"></i></button>
             </div>
         </header>
-        <div class="stg-body sf-ml-5 sf-mr-5 sf-pl-5 sf-pr-5 mt-5 p-3 mx-auto  sf-px-auto">
+        <div
+            class="stg-body sf-ml-xs-0 sf-mr-xs-0 sf-pl-xs-0 sf-pr-xs-0 sf-ml-lg-7 sf-mr-lg-7 sf-pl-lg-9 sf-pr-lg-9  mt-5 mx-auto  sf-px-auto">
             <nav class="mobile-nav">
                 <div class="search-mobile">
                     <form action="" method="get">
@@ -237,14 +236,14 @@
 
 
 
-            <div id="social-sid" class="socialnav my-auto">
+            <div id="social-sid" class="socialnav my-auto sf-d-none-SM-0">
                 <a href="#" id="facbg"><i class="fa-brands fa-facebook-f fa-beat" style="color: aliceblue;"></i> </a>
                 <a href="#" id="in"> <i class="fa-brands fa-linkedin-in fa-beat"></i></a>
                 <a href="#" id="inst"><i class="fa-brands fa-square-instagram fa-beat"></i></a>
                 <a href="#" id="twt"> <i class="fa-brands fa-twitter fa-beat"></i></a>
             </div>
             <a href="">
-                <div id="a-btn" class="btn-circle-devis " data-aos="fade" data-aos-duration="1500">
+                <div id="a-btn" class="btn-circle-devis sf-d-none-SM-0" data-aos="fade" data-aos-duration="1500">
 
                     <span style="--i:1">D</span>
                     <span style="--i:2">e</span>
@@ -274,80 +273,127 @@
 
 
 
-            <div class="sf-dflex sf-flex-col sf-mx-auto sf-mt-3 mx-auto">
-                <div class="sf-dgrid sf-pt-3">
-                    <div class="sf-fw-6 sf-fs-3 text-left  aos-item" data-aos="fade-up" data-aos-duration="1500">
-                        Rédaction web SEO
+            <div
+                class="sf-dflex sf-flex-col sf-mx-auto sf-mt-xs-1 sf-mt-lg-3 sf-pl-md-8 sf-pr-md-8 sf-pl-lg-0 sf-pr-lg-0 mx-auto">
+                <div class="sf-dgrid sf-pt-md-3">
+                    <div class="sf-fw-6 sf-p-xs-2 sf-p-md-0 sf-fs-3 text-left sf-mx-auto-SM aos-item" data-aos="fade-up"
+                        data-aos-duration="1500">
+                        Rédaction web SEO.
                     </div>
 
                 </div>
-                <div class="sf-dflex sf-mt-5 fs-2">
-                    <div class="sf-w30 sf-pl-6"></div>
-                    <div class="sf-fs-2 sf-w60 sf-ml-9 aos-item sf-ml-4" data-aos="zoom" data-aos-duration="1500"
-                        data-aos-delay="1000">
+                <div class="sf-dflex sf-mt-lg-3 fs-2">
+                    <div class="sf-w-xs-0 sf-w-md-2 sf-w-lg-4  sf-p-xs-0 sf-pl-md-1"></div>
+                    <div class="sf-fs-md-2 sf-ml-xs-0 sf-ml-md-5 sf-ml-9 aos-item sf-ml-4 sf-p-xs-2 sf-p-md-2 sf-pt-xs-0 sf-pt-md-2 sf-p-lg-0 sf-w-xs-12 sf-w-md-11 sf-w-lg-8 sf-mx-auto-SM"
+                        data-aos="zoom" data-aos-duration="1500" data-aos-delay="1000">
                         Choisisez l'option qui vous convient, et reçevez des contenus de qualité dans les délais !
                     </div>
                 </div>
-                <div class="sf-dflex sf-fw-6 sf-mt-6 sf-fs-2">
+                <div class="sf-dflex sf-fw-6 sf-mt-xs-3 sf-mt-lg-6 sf-fs-2  sf-pl-xs-3 sf-pl-md-0">
                     Pr&ecirc;t et à vendre
                 </div>
-                <div class="swiper sf-w-xs-10 sf-w-sm-12 sf-w-md-10  sf-w-lg-12 sf-mx-auto sf-mt-6 ">
+                <div class="swiper sf-w-xs-10 sf-w-sm-12 sf-w-md-10  sf-w-lg-12 sf-mx-auto sf-mt-6"
+                    style=" height: auto;">
                     <div class="swiper-wrapper sf-w-12 sf-dgrid ">
-                        <div class="sf-br-1 sf-dflex sf-flex-col  sf-mx-auto sf-p-1 swiper-slide"
+                        <div class="sf-br-1 sf-dflex sf-flex-col  sf-mx-auto sf-p-1 swiper-slide effet-opacity-1"
                             style="background-color: #d6cece;">
-                            <div class="sf-fs-2 sf-fw-6 text-center sf-mt-2">Thématique</div>
-                            <div class="sf-mx-auto sf-p-1 sf-br-1 sf-mt-2" style="background-color: white;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa hic debitis officia
-                                repellendus? Maxime, facere quaerat, distinctio nostrum similique incidunt natus quis
-                                doloremque corrupti nihil nemo, rerum totam nisi architecto!
+                            <div class="sf-fs-2 sf-fw-6 text-center sf-mt-1">
+                                <h5>Thematique</h5>
+                            </div>
+                            <div class="sf-mx-auto sf-br-1 sf-mt-2 sf-dgrid thumb-img-container"
+                                style="background-color: white;">
+                                <img src="img/IMG-20230607-WA0011.jpg" class="thumb-img sf-br-1" loading="lazy" />
+                                <div class="swiper-lazy-preloader"></div>
+                                <div class="thumb-img-description ">
+                                    <div>
+                                        <h1>Element </h1>
+                                        <span>Description</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="sf-btn sf-btn-bg-bprimary sf-mx-auto sf-p-1 sf-br-2 sf-mt-2">
                                 Je veux <i class="fa-regular fa-heart"></i>
                             </div>
                         </div>
-                        <div class="sf-br-1 sf-dflex sf-flex-col  sf-mx-auto sf-p-1 swiper-slide"
+                        <div class="sf-br-1 sf-dflex sf-flex-col  sf-mx-auto sf-p-1 swiper-slide effet-opacity-0"
                             style="background-color: #d6cece;">
-                            <div class="sf-fs-2 sf-fw-6 text-center sf-mt-2">Thématique</div>
-                            <div class="sf-mx-auto sf-p-1 sf-br-1 sf-mt-2" style="background-color: white;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa hic debitis officia
-                                repellendus? Maxime, facere quaerat, distinctio nostrum similique incidunt natus quis
-                                doloremque corrupti nihil nemo, rerum totam nisi architecto!
+                            <div class="sf-fs-2 sf-fw-6 text-center sf-mt-1">
+                                <h5>Thematique</h5>
                             </div>
-                            <div class="sf-btn sf-btn-bg-bprimary sf-mx-auto sf-p-1 sf-br-2 sf-mt-2">Je veux <i
-                                    class="fa-regular fa-heart"></i></div>
+                            <div class="sf-mx-auto sf-br-1 sf-mt-2 sf-dgrid thumb-img-container"
+                                style="background-color: white;">
+                                <img src="img/IMG-20230607-WA0011.jpg" class="thumb-img sf-br-1" loading="lazy" />
+                                <div class="swiper-lazy-preloader"></div>
+                                <div class="thumb-img-description ">
+                                    <div>
+                                        <h1>Element </h1>
+                                        <span>Description</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sf-btn sf-btn-bg-bprimary sf-mx-auto sf-p-1 sf-br-2 sf-mt-2">
+                                Je veux <i class="fa-regular fa-heart"></i>
+                            </div>
                         </div>
-                        <div class="sf-br-1 sf-dflex sf-flex-col  sf-mx-auto sf-p-1 swiper-slide"
+                        <div class="sf-br-1 sf-dflex sf-flex-col  sf-mx-auto sf-p-1 swiper-slide effet-opacity-1"
                             style="background-color: #d6cece;">
-                            <div class="sf-fs-2 sf-fw-6 text-center sf-mt-2">Thématique</div>
-                            <div class="sf-mx-auto sf-p-1 sf-br-1 sf-mt-2" style="background-color: white;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa hic debitis officia
-                                repellendus? Maxime, facere quaerat, distinctio nostrum similique incidunt natus quis
-                                doloremque corrupti nihil nemo, rerum totam nisi architecto!
+                            <div class="sf-fs-2 sf-fw-6 text-center sf-mt-1">
+                                <h5>Thematique</h5>
                             </div>
-                            <div class="sf-btn sf-btn-bg-bprimary sf-mx-auto sf-p-1 sf-br-2 sf-mt-2">Je veux <i
-                                    class="fa-regular fa-heart"></i></div>
+                            <div class="sf-mx-auto sf-br-1 sf-mt-2 sf-dgrid thumb-img-container"
+                                style="background-color: white;">
+                                <img src="img/IMG-20230607-WA0011.jpg" class="thumb-img sf-br-1" loading="lazy" />
+                                <div class="swiper-lazy-preloader"></div>
+                                <div class="thumb-img-description ">
+                                    <div>
+                                        <h1>Element </h1>
+                                        <span>Description</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sf-btn sf-btn-bg-bprimary sf-mx-auto sf-p-1 sf-br-2 sf-mt-2">
+                                Je veux <i class="fa-regular fa-heart"></i>
+                            </div>
                         </div>
-                        <div class="sf-br-1 sf-dflex sf-flex-col  sf-mx-auto sf-p-1 swiper-slide"
+                        <div class="sf-br-1 sf-dflex sf-flex-col  sf-mx-auto sf-p-1 swiper-slide effet-opacity-0"
                             style="background-color: #d6cece;">
-                            <div class="sf-fs-2 sf-fw-6 text-center sf-mt-2">Thématique</div>
-                            <div class="sf-mx-auto sf-p-1 sf-br-1 sf-mt-2" style="background-color: white;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa hic debitis officia
-                                repellendus? Maxime, facere quaerat, distinctio nostrum similique incidunt natus quis
-                                doloremque corrupti nihil nemo, rerum totam nisi architecto!
+                            <div class="sf-fs-2 sf-fw-6 text-center sf-mt-1">
+                                <h5>Thematique</h5>
                             </div>
-                            <div class="sf-btn sf-btn-bg-bprimary sf-mx-auto sf-p-1 sf-br-2 sf-mt-2">Je veux <i
-                                    class="fa-regular fa-heart"></i></div>
+                            <div class="sf-mx-auto sf-br-1 sf-mt-2 sf-dgrid thumb-img-container"
+                                style="background-color: white;">
+                                <img src="img/IMG-20230607-WA0011.jpg" class="thumb-img sf-br-1" loading="lazy" />
+                                <div class="swiper-lazy-preloader"></div>
+                                <div class="thumb-img-description ">
+                                    <div>
+                                        <h1>Element </h1>
+                                        <span>Description</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sf-btn sf-btn-bg-bprimary sf-mx-auto sf-p-1 sf-br-2 sf-mt-2">
+                                Je veux <i class="fa-regular fa-heart"></i>
+                            </div>
                         </div>
-                        <div class="sf-br-1 sf-dflex sf-flex-col  sf-mx-auto sf-p-1 swiper-slide"
+                        <div class="sf-br-1 sf-dflex sf-flex-col  sf-mx-auto sf-p-1 swiper-slide effet-opacity-0"
                             style="background-color: #d6cece;">
-                            <div class="sf-fs-2 sf-fw-6 text-center sf-mt-2">Thématique</div>
-                            <div class="sf-mx-auto sf-p-1 sf-br-1 sf-mt-2" style="background-color: white;">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa hic debitis officia
-                                repellendus? Maxime, facere quaerat, distinctio nostrum similique incidunt natus quis
-                                doloremque corrupti nihil nemo, rerum totam nisi architecto!
+                            <div class="sf-fs-2 sf-fw-6 text-center sf-mt-1">
+                                <h5>Thematique</h5>
                             </div>
-                            <div class="sf-btn sf-btn-bg-bprimary sf-mx-auto sf-p-1 sf-br-2 sf-mt-2">Je veux <i
-                                    class="fa-regular fa-heart"></i></div>
+                            <div class="sf-mx-auto sf-br-1 sf-mt-2 sf-dgrid thumb-img-container"
+                                style="background-color: white;">
+                                <img src="img/IMG-20230607-WA0011.jpg" class="thumb-img sf-br-1" loading="lazy" />
+                                <div class="swiper-lazy-preloader"></div>
+                                <div class="thumb-img-description ">
+                                    <div>
+                                        <h1>Element </h1>
+                                        <span>Description</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sf-btn sf-btn-bg-bprimary sf-mx-auto sf-p-1 sf-br-2 sf-mt-2">
+                                Je veux <i class="fa-regular fa-heart"></i>
+                            </div>
                         </div>
                     </div>
 
@@ -366,53 +412,59 @@
                         contenu</a></div>
 
                 <hr>
-                <div class="sf-fs-2 sf-fw-6 sf-mt-6">Ce que vous voulez</div>
-                <div id="simple" class="sf-box_shadox-1 sf-w70 sf-p-2 sf-mt-6 sf-mx-auto-MD sf-translateX-lg-4 "
+                <div class="sf-fs-2 sf-fw-6 sf-mt-6 sf-pl-xs-3 sf-pl-md-0">Ce que vous voulez</div>
+                <div id="simple"
+                    class="sf-box_shadox-1 sf-w-xs-11 sf-w-md-9 sf-p-2 sf-mt-6 sf-mx-auto-MD sf-translateX-lg-3 sf-ml-lg-2 sf-brtr-4 sf-brbl-4"
                     style="background-color: #d6cece;">
                     <div class="sf-fs-2 sf-fw-6 sf-mt-2">Rédaction simple</div>
-                    <div class=" sf-ml-xs-0 sf-ml-md-5 sf-p-1 sf-mt-2 sf-fw-6" style="background-color:white;">
+                    <div class=" sf-ml-xs-0 sf-ml-md-5 sf-p-1 sf-mt-2 sf-fw-xs-6 sf-fw-md-5"
+                        style="background-color:white;">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aspernatur sed tempora. Ab id
                         quos eius aut animi voluptates vero eveniet quam. Ex vero illum possimus doloremque! Et, culpa
                         explicabo!
                     </div>
                     <div class="sf-fs-2 sf-fw-12">
-                        <div
-                            class="sf-fs-2 sf-translateX-md-5 sf-translateX-lg-10 sf-fs-xs-1 sf-fw-xs-9 sf-fs-md-2 sf-fw-md-6  sf-p-xs-1 sf-p-md-2 text-center sf-br-1 sf-mt-2 sf-w-md-8 sf-w-lg-6 sf-btn-bg-gsecondary">
-                            Tarif
-                            :
-                            1
-                            &euro; / 100
-                            mots</div>
-                        <div
-                            class="sf-fs-2 sf-fw-6  text-center  sf-mt-2 sf-translateX-md-3 sf-fs-xs-1 sf-fw-xs-9 sf-fs-md-2 sf-fw-md-6  ">
-                            <a class="sf-fw-6 sf-btn-bg-bprimary sf-br-1 sf-p-1 sf-w-sm-11  sf-w-md-8  sf-w-lg-9 sf-mr-lg-0"
-                                style="  text-decoration: none;" href="">Je commande</a>
+                        <div class="sf-dflex">
+                            <div
+                                class="sf-btn sf-mx-auto-SM  sf-translateX-md-5 sf-translateX-lg-10   sf-fw-6 sf-p-md-1 text-center sf-br-1 sf-mt-2 sf-w-md-8 sf-w-lg-6 sf-btn-bg-gsecondary">
+                                Tarif
+                                :
+                                1
+                                &euro; / 100
+                                mots</div>
+                        </div>
+                        <div class="  text-center  sf-mt-2 sf-translateX-md-4  ">
+                            <a class="sf-btn sf-btn-bg-bprimary sf-br-1   sf-mr-lg-0" style="  text-decoration: none;"
+                                href="">Je commande</a>
                         </div>
                     </div>
 
 
 
                 </div>
-                <div id="optimise" class="sf-box_shadox-1 sf-w70 sf-p-2 sf-mt-6 sf-mx-auto-MD"
+                <div id="optimise"
+                    class="sf-box_shadox-1 sf-w-xs-11 sf-w-md-9 sf-p-2 sf-mt-6 sf-mx-auto-MD sf-brtr-4 sf-brbl-4"
                     style="background-color: #d6cece;">
                     <div class="sf-fs-2 sf-fw-6 sf-mt-2">Rédaction optimisée SEO</div>
-                    <div class=" sf-ml-xs-0 sf-ml-md-5 sf-p-1 sf-mt-2 sf-fw-6" style="background-color:white;">
+                    <div class=" sf-ml-xs-0 sf-ml-md-5 sf-p-1 sf-mt-2 sf-fw-xs-6 sf-fw-md-5"
+                        style="background-color:white;">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aspernatur sed tempora. Ab id
                         quos eius aut animi voluptates vero eveniet quam. Ex vero illum possimus doloremque! Et, culpa
                         explicabo!
                     </div>
                     <div class="sf-fs-2 sf-fw-12">
-                        <div
-                            class="sf-fs-2 sf-translateX-md-5 sf-translateX-lg-10 sf-fs-xs-1 sf-fw-xs-9 sf-fs-md-2 sf-fw-md-6  sf-p-xs-1 sf-p-md-2 text-center sf-br-1 sf-mt-2 sf-w-md-8 sf-w-lg-6 sf-btn-bg-gsecondary">
-                            Tarif
-                            :
-                            3
-                            &euro; / 100
-                            mots</div>
-                        <div
-                            class="sf-fs-2 sf-fw-6  text-center  sf-mt-2 sf-translateX-md-3 sf-fs-xs-1 sf-fw-xs-9 sf-fs-md-2 sf-fw-md-6  ">
-                            <a class="sf-fw-6 sf-btn-bg-bprimary sf-br-1 sf-p-1 sf-w-sm-11  sf-w-md-8  sf-w-lg-9 sf-mr-lg-0"
-                                style="  text-decoration: none;" href="">Je commande</a>
+                        <div class="sf-dflex">
+                            <div
+                                class="sf-btn sf-mx-auto-SM  sf-translateX-md-5 sf-translateX-lg-10   sf-fw-6 sf-p-md-1 text-center sf-br-1 sf-mt-2 sf-w-md-8 sf-w-lg-6 sf-btn-bg-gsecondary">
+                                Tarif
+                                :
+                                3
+                                &euro; / 100
+                                mots</div>
+                        </div>
+                        <div class="  text-center  sf-mt-2 sf-translateX-md-4  ">
+                            <a class="sf-btn sf-btn-bg-bprimary sf-br-1   sf-mr-lg-0" style="  text-decoration: none;"
+                                href="">Je commande</a>
                         </div>
                     </div>
 
@@ -420,48 +472,55 @@
 
                 </div>
 
-                <div id="copy" class="sf-box_shadox-1 sf-w70 sf-p-2 sf-mt-6 sf-mx-auto-MD sf-translateX-lg-4 "
+                <div id="copy"
+                    class="sf-box_shadox-1 sf-w-xs-11 sf-w-md-9 sf-p-2 sf-mt-6 sf-mx-auto-MD sf-translateX-lg-3 sf-ml-lg-2 sf-brtr-4 sf-brbl-4"
                     style="background-color: #d6cece;">
                     <div class="sf-fs-2 sf-fw-6 sf-mt-2">Rédaction Premium / Copywrighting</div>
-                    <div class=" sf-ml-xs-0 sf-ml-md-5 sf-p-1 sf-mt-2 sf-fw-6" style="background-color:white;">
+                    <div class=" sf-ml-xs-0 sf-ml-md-5 sf-p-1 sf-mt-2 sf-fw-xs-6 sf-fw-md-5"
+                        style="background-color:white;">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aspernatur sed tempora. Ab id
                         quos eius aut animi voluptates vero eveniet quam. Ex vero illum possimus doloremque! Et, culpa
                         explicabo!
                     </div>
                     <div class="sf-fs-2 sf-fw-12">
-                        <div
-                            class="sf-fs-2 sf-translateX-md-5 sf-translateX-lg-10 sf-fs-xs-1 sf-fw-xs-9 sf-fs-md-2 sf-fw-md-6  sf-p-xs-1 sf-p-md-2 text-center sf-br-1 sf-mt-2 sf-w-md-8 sf-w-lg-6 sf-btn-bg-gsecondary">
-                            Tarif
-                            :
-                            6
-                            &euro; / 100
-                            mots</div>
-                        <div
-                            class="sf-fs-2 sf-fw-6  text-center  sf-mt-2 sf-translateX-md-3 sf-fs-xs-1 sf-fw-xs-9 sf-fs-md-2 sf-fw-md-6  ">
-                            <a class="sf-fw-6 sf-btn-bg-bprimary sf-br-1 sf-p-1 sf-w-sm-11  sf-w-md-8  sf-w-lg-9 sf-mr-lg-0"
-                                style="  text-decoration: none;" href="">Je commande</a>
+                        <div class="sf-dflex">
+                            <div
+                                class="sf-btn sf-mx-auto-SM  sf-translateX-md-5 sf-translateX-lg-10   sf-fw-6 sf-p-md-1 text-center sf-br-1 sf-mt-2 sf-w-md-8 sf-w-lg-6 sf-btn-bg-gsecondary">
+                                Tarif
+                                :
+                                6
+                                &euro; / 100
+                                mots</div>
+                        </div>
+                        <div class="  text-center  sf-mt-2 sf-translateX-md-4  ">
+                            <a class="sf-btn sf-btn-bg-bprimary sf-br-1   sf-mr-lg-0" style="  text-decoration: none;"
+                                href="">Je commande</a>
                         </div>
                     </div>
-
 
 
                 </div>
 
 
-                <div class="sf-fs-2 sf-fw-6 sf-mt-6">Les options supplémentaires</div>
-                <div class="sf-fw-6 sf-p-2 sf-fs-2">
-                    <ul class="sf-pl-8">
+                <div class="sf-fs-2 sf-fw-6 sf-mt-6 sf-pl-xs-3 sf-pl-lg-0">Les options supplémentaires</div>
+                <div class="sf-fw-6 sf-p-2 sf-fs-1 sf-pl-xs-3 sf-pl-lg-0">
+                    <ul class="sf-pl-xs-3 sf-pl-md-5 sf-pl-lg-8">
                         <li>Meta-descriptions</li>
                         <li>Images libres de droit</li>
                     </ul>
                 </div>
-                <div class="sf-dflex sf-mt-6 sf-mb-5" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="sf-w-12 mx-auto">
-                        <div class="sf-w-12 sf-mt-3 sf-fs-2 sf-fw-6 ">
+                <hr class="sf-mt-xs-3 sf-mt-md-5 sf-mt-lg-9">
+
+                <div class="sf-dflex sf-mt-xs-1 sf-mt-lg-6 sf-mb-5 sf-mx-auto" data-aos="fade-up"
+                    data-aos-duration="1500">
+                    <div class="sf-dflex sf-w-12 sf-mx-auto">
+                        <div
+                            class="sf-w-12 sf-mt-xs-0 sf-mt-md-1 sf-mt-3 sf-fs-2 sf-fw-6 sf-p-xs-2 sf-p-lg-0 sf-mx-auto">
                             <span>Pourquoi le développement web et mobile pour votre entreprise de nos jours ?</span>
                         </div>
-                        <div class="my-auto sf-mt-3">
-                            <div class="mt-5 sf-my-auto" style="font-size:large;">
+                        <div class="sf-mt-xs-0 sf-mt-md-1 sf-mt-3 sf-mx-auto">
+                            <div class="sf-mt-xs-0 sf-mt-md-1 sf-p-xs-2 sf-p-md-1 sf-p-lg-0 sf-mx-auto"
+                                style="font-size:large;">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ullam temporibus
                                 similique? Facilis hic natus rerum sequi fugiat vero obcaecati tempora, corporis
                                 temporibus blanditiis possimus esse! Dolorem veritatis illum, non ad porro temporibus,
@@ -521,16 +580,17 @@
                 style="color: #52565b;"></i></a>
     </div>
 
-    <footer class="footer d-none div-li aos-item fs8" data-aos="fade-right" data-aos-duration="1500"
+    <footer class="footer  div-li aos-item fs8" data-aos="fade-right" data-aos-duration="1500"
         data-aos-placement="center-bottom">
         <div class="footer-group div-li">
             <div class="group-1">
                 <!-- <img src="Sf 1/Sf/Stratégy-Fine.png" class="mx-auto" style="width: 70%;" alt=""> -->
-                <img src="img/Strategy fond noir.svg" class="mx-auto my-auto" style="width: 70%;" alt="">
+                <a class="mx-auto my-auto" href="index.html"><img src="img/Strategy fond noir.svg" class="mx-auto "
+                        style="width:70%; height:auto;" alt=""></a>
                 <!-- <img src="img/logo-txt.png" class="mx-auto" style="width: 80%;" alt=""> -->
                 <!-- <div class="txt-center mb-01">ASSOCIATION DES STRAT&Eacute;GIES NOUVELLES ET FINES</div> -->
-                <div class="icons ">
-                    <a href="#"><i class="fa-brands fa-facebook-f" style="color: aliceblue;"></i> </a>
+                <div class="icons mx-auto my-auto">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
                     <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="#"> <i class="fa-brands fa-twitter"></i></a>
@@ -542,29 +602,37 @@
                 </div>
                 <div>
                     <ul>
-                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="dev.html">Refonte
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a
+                                href="refont.html">Refonte
                                 de
                                 site</a></li>
                         <li><i class="fa-solid fa-angle-right " style="color: #c5c4c4;"></i> <a class="fs8"
-                                href="dev.html">Sites
+                                href="site.html">Sites
                                 vitrines</a></li>
-                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="dev.html">Sites
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a
+                                href="ecommerce.html">Sites
                                 E-commerce</a></li>
                         <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a
-                                href="dev.html">Applications
+                                href="applis.html">Applications
                                 mobile</a></li>
-                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">SEO</a></li>
-                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">SEA</a></li>
-                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Maquette de
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a
+                                href="ref_seo.html">SEO</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a
+                                href="ref_sea.html">SEA</a></li>
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a
+                                href="maquette.html">Maquette de
                                 site</a></li>
-                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Designe
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a
+                                href="design_g.html">Designe
                                 graphique</a></li>
-                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Gestion des
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a
+                                href="resaux_social.html">Gestion des
                                 réseaux sociaux</a></li>
-                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Montage
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="video.html">Montage
                                 vidéos</a>
                         </li>
-                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Rédaction
+                        <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a
+                                href="redaction_seo.html">Rédaction
                                 web</a>
                         </li>
                     </ul>
@@ -586,7 +654,7 @@
                             <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">FAQs</a></li>
                             <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Nous
                                     recrutons</a></li>
-                            <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Jeux
+                            <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="game.html">Jeux
                                     concours</a></li>
                             <li><i class="fa-solid fa-angle-right" style="color: #e6e6e6;"></i> <a href="">Prêt et à
                                     vendre</a></li>
@@ -596,29 +664,25 @@
                     </div>
                 </div>
                 <div>
-                    <div class="txt-center contact mt-4">
+                    <div class="txt-center contact sf-mt-10">
                         Contacts
                     </div>
                     <div class=" div-li-2  mt-1 div-contact">
 
-                        <div class="txt-center txt-fs-secondary fs8 mt-05">
-                            <i class="fa-solid fa-phone mb-02" style="color: #d6d6d6;"></i> Phone : <br>
-                            <div class="fs8">
-                                +229 229 229 00
-                            </div>
-                            <div class="fs8 mt-05"> +229 300 300 00</div>
+                        <!-- <div class="txt-center txt-fs-secondary fs8 mt-05">
+                        <i class="fa-solid fa-phone mb-01" style="color: #d6d6d6;"></i> Phone : <br>
+                        <div class="fs8 my-auto">
+                            <a href="tel:+229 229 229 00">+229 229 229 00</a>
                         </div>
+                    </div> -->
 
 
-                        <div class="txt-center txt-fs-secondary fs8 mt-05">
-                            <i class="fa-solid fa-envelope mb-02" style="color: #dbdbdb;"></i> <span>Email:</span> <br>
-                            <div class="fs8">
-                                support@email.com
+                        <div class="txt-center mx-auto txt-fs-secondary fs8 mt-05 ml-2">
+                            <i class=" my-auto fa-solid fa-envelope mb-01" style="color: #dbdbdb;"></i>
+                            <span>Email : </span>
+                            <a class="mx-auto" href="mailto:contact-us@strategyfine.com">contact-us@strategyfine.com</a>
 
-                            </div>
-                            <div class="fs8 mt-05">
-                                company@emai.org
-                            </div>
+
                         </div>
 
                     </div>
@@ -639,7 +703,10 @@
 
         </div>
     </footer>
-    <div class="div-li d-none mx-auto txt-center ccopy ">&copy; StrategyFine 2023 All right reserved</div>
+    <div class="div-li  mx-auto txt-center ccopy ">&copy; &nbsp; <a href="index.html">StrategyFine&nbsp;</a> 2023 All
+        right
+        reserved
+    </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
@@ -651,6 +718,10 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="script/magicsuggest/magicsuggest-min.js"></script>
     <script>
+        const loader = document.querySelector('.sf-loader');
+        window.addEventListener('load', () => {
+            loader.classList.add('loader-out');
+        });
         AOS.init({
             easing: 'ease-in-out-sine'
         });
@@ -831,26 +902,12 @@
 
             };
 
+            $nav_bar.removeClass('elm-invisible')
 
+            $nav_bar.addClass('elm-visible');
             //&& scroll_top < hdh * 0.6
 
-            if (scroll_top > window_height) {
-                if (!$nav_bar.hasClass('elm-visible')) {
-                    $nav_bar.removeClass('elm-invisible')
 
-                    $nav_bar.addClass('elm-visible');
-                }
-            } else {
-                if ($nav_bar.hasClass('elm-invisible')) {
-                    $nav_bar.removeClass('elm-visible')
-
-                    $nav_bar.addClass('elm-invisible');
-
-                }
-                $nav_bar.removeClass('elm-visible')
-                $nav_bar.addClass('elm-invisible');
-
-            };
 
         });
 
@@ -895,8 +952,10 @@
             },
             direction: 'horizontal',
             loop: true,
+
             slidesPerView: 3,
             spaceBetween: 30,
+
 
             autoplay: {
                 delay: 5000,

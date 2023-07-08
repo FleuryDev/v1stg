@@ -4210,6 +4210,7 @@
   user-select: none;
   padding: 0.6em !important;
   font-size: 1.048951049rem !important;
+  transition: all 0.4s linear;
   text-decoration: none;
 }
 .sf-btn:focus, .sf-btn.focus {
@@ -4282,6 +4283,20 @@
 .sf-btn-bg-gray-dark {
   background-color: #343a40 !important;
   color: white !important;
+}
+
+.sf-btn-bg-bprimary:hover {
+  background-color: #00b200 !important;
+  color: white !important;
+  transition: all 0.4s linear;
+  transform: scale(1.01);
+}
+
+.sf-btn-bg-bsecondary:hover {
+  background-color: #00ff00 !important;
+  color: black !important;
+  transform: scale(1.01);
+  transition: all 0.4s linear;
 }
 
 .sf-fw-0 {
