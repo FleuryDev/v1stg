@@ -249,8 +249,7 @@ body {
   bottom: 0;
   right: -100VW;
   width: 60vw;
-  backdrop-filter: blur(90px);
-  background-color: rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, .8);
   box-shadow: .2rem .2rem .9rem rgb(213, 213, 213);
   z-index: 16;
   display: flex;
@@ -1851,9 +1850,14 @@ textarea {
   width: 85vw;
   background-color: #000;
   position: relative;
-
   z-index: 1;
   margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width : 768px) {
+  .footer {
+    max-height: 61vmax;
+  }
 }
 
 .footer-group {
