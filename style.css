@@ -1856,7 +1856,7 @@ textarea {
 
 @media screen and (min-width : 768px) {
   .footer {
-    max-height: 61vmax;
+    max-height: 61vh !important;
   }
 }
 
