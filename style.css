@@ -1852,13 +1852,10 @@ textarea {
   position: relative;
   z-index: 1;
   margin-bottom: 2.5rem;
+
 }
 
-@media screen and (min-width : 768px) {
-  .footer-group {
-    max-height: 61vh !important;
-  }
-}
+
 
 .footer-group {
   grid-template-columns: 33fr 33fr 33fr;
