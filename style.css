@@ -1851,7 +1851,7 @@ textarea {
   background-color: #000;
   position: relative;
   z-index: 1;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 
 }
 
@@ -1913,6 +1913,7 @@ textarea {
 .group-3 ul li a {
   color: #e6e6e6;
   transition: color .4s;
+  padding: 0 !important;
 }
 
 
@@ -1930,7 +1931,7 @@ textarea {
 /* .footer ul li::before{content: '> ';} */
 .footer ul li {
   color: white !important;
-  padding: .3rem;
+  padding: .25rem !important;
   list-style: none;
   border-bottom: 1px solid #333333;
 }
@@ -1964,10 +1965,12 @@ textarea {
 }
 
 .ccopy {
+  margin-top: 0;
   display: flex;
   background-color: #929ba1;
-  padding: .8rem;
+  padding: .6rem;
   width: 80%;
+  height: max-content;
   justify-content: center;
   align-items: center;
   margin-left: 20%;
