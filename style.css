@@ -249,7 +249,7 @@ body {
   bottom: 0;
   right: -100VW;
   width: 60vw;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgb(255, 255, 255);
   box-shadow: .2rem .2rem .9rem rgb(213, 213, 213);
   z-index: 16;
   display: flex;
@@ -2081,6 +2081,37 @@ textarea {
  No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 992px) {
+
+  .snip1445:hover img,
+  .snip1445.h-hover img {
+    zoom: 1;
+    filter: alpha(opacity=1);
+    -webkit-opacity: 1;
+    opacity: 1;
+  }
+
+  .snip1445 figcaption:before,
+  .snip1445.h-hover figcaption:before,
+  .snip1445 figcaption:after,
+  .snip1445.h-hover figcaption:after,
+  .snip1445 figcaption div:before,
+  .snip1445.h-hover figcaption div:before,
+  .snip1445 figcaption div:after,
+  .snip1445.h-hover figcaption div:after {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .snip1445 figcaption:before,
+  .snip1445.h-hover figcaption:before,
+  .snip1445:hover figcaption:after,
+  .snip1445.h-hover figcaption:after {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+  }
+}
+
 @media only screen and (max-width: 575px) {
 
   *,
@@ -2091,6 +2122,8 @@ textarea {
     padding: 0;
 
   }
+
+
 
   body {
     width: 100vw !important;
@@ -2289,6 +2322,17 @@ textarea {
     margin-right: auto !important;
   }
 
+  .img-w-100 {
+    width: 100% !important;
+    scale: 1.3;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .ms-m-t-after-process-1 {
+    margin-top: 4rem !important;
+  }
+
   .ms-m-t-1 {
     margin-top: .6rem !important;
   }
@@ -2306,8 +2350,8 @@ textarea {
   }
 
   .pl-2 {
-    padding-left: 0 !important;
-    padding: 0 !important;
+    padding-left: 1rem !important;
+    padding: 1rem !important;
   }
 
 
@@ -2391,7 +2435,7 @@ textarea {
     padding: .5rem;
     box-shadow: .1rem .1rem .3rem #d6d6d6;
     left: 80%;
-    top: 70%;
+    top: 90%;
   }
 
   .mobil-p-2 {
@@ -2449,8 +2493,8 @@ textarea {
   }
 
   .ccopy {
-    background: linear-gradient(65deg, #181818, #383636);
-    color: white;
+    background-color: #929ba1;
+
     width: 95%;
     padding: .4rem;
   }
@@ -2548,8 +2592,8 @@ textarea {
   }
 
   .md-w-100 {
-    width: 80%;
-    margin: 0 !important;
+    width: 100%;
+    margin: auto !important;
   }
 
   .txt-infos-stg {
@@ -2610,8 +2654,8 @@ textarea {
   }
 
   .pl-2 {
-    padding-left: 0 !important;
-    padding: 0;
+    padding-left: 1rem !important;
+    padding: 1rem;
   }
 
   .ml-2 {
@@ -2659,7 +2703,7 @@ textarea {
     padding: .5rem;
     box-shadow: .1rem .1rem .3rem #d6d6d6;
     right: 2rem;
-    top: 70%;
+    top: 85%;
   }
 
 
@@ -2708,8 +2752,8 @@ textarea {
   }
 
   .ccopy {
-    background: linear-gradient(65deg, #181818, #383636);
-    color: white;
+    background-color: #929ba1;
+
     width: 95%;
     padding: .4rem;
   }
@@ -2757,6 +2801,16 @@ textarea {
   .group-3 {
     ;
   } */
+
+  .mobil-mw-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .mobil-order-2 {
+    order: 2;
+
+    margin: auto;
+  }
 
   .politiques {
     display: grid;
@@ -2882,7 +2936,7 @@ textarea {
     padding: .5rem;
     box-shadow: .1rem .5rem .4rem #c4c4c3;
     right: 2.5rem;
-    top: 70%;
+    top: 75%;
   }
 
 
@@ -3060,7 +3114,7 @@ textarea {
     padding: .5rem;
     box-shadow: .1rem .5rem .4rem #c4c4c3;
     right: 2.5rem;
-    top: 70%;
+    top: 75%;
   }
 
 
